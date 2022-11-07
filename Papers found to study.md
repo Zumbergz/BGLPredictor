@@ -49,16 +49,137 @@
 		- For long term (8 and 10 hrs) NNs made predictions with $RMSE_{5 \ day}$ of $0.14 \pm 0.16 \ SD \ mmol/L$ and had an $error_{max}$ of $0.20 \ mmol/L$ for 8 hrs, $0.36 \ mmol/L$ for 10 hours.
 		- Future investigation; using real time recurrent networks which are capable of continuous learning. Could be an interesting thing to study for changing metabolism over a period of weeks and months.
 - A review of personalized blood glucose prediction strategies for T1DM patients
-	- 
+	- ***This paper is very good for providing an overview of methods people have taken. May want to use it as a basis for more research in the future*
+	- Believes one of the main obstacles is the lack of BG prediction models that are reliable enouh to model the varience of a diabetic patient's physiology. We should be able to mimic the patient's physiology and cope with external factors like noise, exercise, stress, unannounced meals etc.
+	- Believes we need an updated review to establish current trends in modeling strategies.
+	- Thinks there is no common consensus about how to include physical activity and other intra-patient variablity sources in the glucose kinetics
+	- **Predictive Models placed into 4 different categories**
+		- **Physiological models**
+			- Require a previous understanding of insulin and glucose metabolism.
+			- Useful for performing simulations of BG metabolism in the form of compartmental models and for studying the physological processes that are involved in glucose regulation.
+			- ![[Pasted image 20221101133716.png]]
+			- Major drawback is that this type of model contains several physiological parameters that need to be set prior to their use to make BG predictions. They can be adjusted using identification techniques, ML techniques, or population values. 
+			- Difficult to find a satisfying model with a good generalisation capability as they usually contain several variables and parameters that are difficult ot adjust.
+		- **Data-driven models**
+			- Fully rely on CGM data and, sometimes, additional signals to model a patient's physiological response without involving physiological variables.
+			- E.g. using NN / Autoregression models.
+		- **Hybrid Models**
+			- A physiological model for glucose digestion and absorption, a second model for insulin absorption , and a third model for exercise. These models are typically used in pre-processing.
+			- Usually known as hybrid models as they partially rely on physiological models and require the identificatoin and setting of some physiological parameters.
+		- **Control-relevant models**
+			- Used in internal-model control algorithms and can use any of the prior alternatives.
+	- **Physiological Model Results**
+		- Two types of physiological models 
+			- **Minimal models** - capture crucial processes of glucose metabolism and insulin action with few equations and identifiable parameters.
+			- **Maximal / Comprehensive models** - all the available knowledge of the physiological system and are capable of simulating or reproducing a diabetic patient's metabolic response, which allows experiments to assess controllers and treatments.
+		- Most popular models are compartmental models forming a number of interconnected compartments to try and describe the processes that occur in the inaccessible parts of the system.
+		- Most popular proposals for physiological models of insulin action and glucose kinetics are the **Dalla Man Model, Hovorka Model and Bergman minimal model**.
+			- For these models, the input variables include factors from external insulin therapy and nutritional content over time.
+			- For works in BG prediction, the breakdown of models used was as follows:
+				- Hovorka - 33%
+				- Bergman/modified - 25%
+				- Dalla Man - 8.3%
+				- Others - 33%
+			- *Perhaps do some further research into these compartmental models when looking into prediction.*
+	- **Data-driven Models**
+		- Trends show that most researchers are experimenting with a vast pool of ML techniques.
+		- Many models for forecasting glucose concentration use several inputs, some works suggest that ingested carbohydrate information, alpng with injected insulin might be redundant. This is why many approaches just use CGM data as an input.
+		- Other studies state that the use of additional inputs makes the prediction task harder because formalising these inputs in mathematical terms and extracting useful signals from them is not easy.
+		- Around 33% of data-driven models use mixed techniques.
+	- **Hybrid Models**
+		- Use both data-driven and physiological models. Usually a physiological model followed by a data-driven model that learns the relationship between inputs and future outcomes.
+		- Physiological is frequently meal models and insulin absorption models. 
+		- Most popular meal absorption model currently is the Dalla Man. NN is the most common data-driven prediction model.
+	- PH range of 15-120 min is usually explored, and a 30 min PH is the most common value.
+	- Other signals being added to prediction approaches are heart rate, perceived exertion rate and sleep. Still believes that there are more signals that affect BG levels like emotional state and some illnesses.
+	- Most popular performance metrics are always defined in terms of the error. e.g. Mean squared error, sum of squared errors.
+		- This doesn't treat errors differently for hypos/hypers so some mestrics such as glucose-specific MSE have been proposed to add extra penalties whenever the error is potentially more dangerous from a clinical point of view. Quite like Clark's error grid.
+	- Relative absolute different and coefficient of determination are often calculated and reported as standard metrics.
+	- Many proposals lack clinical evidence as they are only validated with *in silico* data.
+	- Clear trend for model individualisation because it allows adaptation of the model features and their relevancy on the prediction in terms of the particular physiology and lifestyle of the patient and obtaining predictions that are more accurate.
 
 - Artificial Neural Network Algorithm for Online Glucose Prediction from Continuous Glucose Monitoring
-
+	- Uses ANN. Inputs preceding 20 mins, output prediction of glucose concentration at the chosen prediction horizon time. Performance assessed over 3 PHs: 15, 30 and 45 mins. Accuracy estimated using the RMSE and prediction delay.
+	- RMSE ~10, 18, 27 mg/dL for 15, 30 45 min respectively. Prediction delay is around 4, 9 and 14 min for upward tends and 5, 15 and 26 min for donward trends.
+	- 10$^{th}$ order data-driven autoregressive model has been tested by Reifman and others and had quite accuracte predictions for a PH of 30 min. (*Could definitely be worth exploring AR models*).
+	- Palerm et al. used a method based on the estimation of glucose and its range of change, using a **Kalman filter**.
+	- Model is **only trained on CGM data** in this example.
+	- **It was found convenient to reduce noise in the data by prefiltering them using a casual Kalman filtering method**. However, the assessment of the prediction in the evaluation section is done by taking the original data profiles as reference.
+	- **NN architecture**
+		- 3 layers; 10 neurons, 5 neuron, 1 neuron. 
+		- Transfer function is sigmoidal in both layers. Neurons are totally connected and feed forward. The output layer has a linear transfer function.
+		- The NN takes in glucose measurements **up to 20 minutes before the current time**. As the sampling rate varies from one CGM system to another, the number of NN inputs is different for each dataset.
+		- The ouptut of the network is the glucose prediction at the PH time.
+	- **ARM architecture**
+		- First order model with time-domain equation $u_i = au_{i-1} + w_i$ 
+		- i = 1,2, ... , n denotes the order of glucose samples collectup up to the $n^{th}$ sampling time $t_n$, and $w_i$ is a random white noise process with zero mean and variance equal to $\sigma^2$.
+		- Let $\theta = (a, \sigma^2)$ A new value of $\theta$  is determined by fitting past glucose data $u_n, u_{n-1}, u_{n-2}, ...$ by a weighted linear recursive least squares algorithm. Once $\theta$ is determined, the model is used to calculate the prediction of glucose level $Q$ steps ahead, where $Q.T_s = PH$ ($T_s$ is the the sensor sampling period).
+		- All the past data participate with different relative weights, in the determination of $\theta$.
+		- They chose exponential weights $\mu^k$ is the wieght of the sample taken $k$ instanst before the actual sampling time with $\mu$ termed the *forgetting factor*.
+		- A different optimal $\mu$ value was chosen for each dataset and for each PH, minimising the RMSE between the original data of the training set and the predicted values obtained applying the ARM to it.
+	- **Evaluation**
+		- Model accuracy evaluated as RMSE of the predicted profiles vs originals.
+		- Model delay estimated by calculating the delays between the original and predicted profiles when they cross three different thresholds defined in the following way. First peaks and nadirs are identified in the original profile. Then, threhsolds are placed at 25%, 50%, and 75% of the nadir-to-peak / peak-to-nadir distance for positive/negative trends.
+		- The final model delay is calculated as the average of threshold delays for every positive and negative trend.
+	- **Results**
+		- ARM seems to before better at shorter PHs and has less delay overall.
+		- NN performs better with longer PHs.
+		- **Both models are more rapid in upward than in downward slopes.**
+	
 - A Real Time Simulation Model of Glucose-Insulin Metabolism for Type 1 Diabetes Patients
-
+	- Based on compartmental models -> recurrent neural network
+	- Compartmental models produce estimations about 
+		- The effect of a short acting insulin intake
+		- The effect of intermediate acting insulin
+		- The effect of carbohydrate intake on blood glucose absorption from the gut.
+	- Argues most physiological models as data sources can only be used for educational purposes as they ignore a numbe ro ffactors associated with glucose metabolism.
+	- CMS passed as inputs to NN along with current BGL.
+	- **Mathematical models**
+		- After the injection of D units of insulin, the change in plasma insulin concentration I is given as:
+			- ![[Pasted image 20221104181505.png]]
+			- where $k_e = 5.4 lt/h$ is the first-order rat eof constant insulin elimination, $V_i = 9.94 lt$ is the volume of insulin distribution, and $T_{50}$ is the half-time insulin dose absorption.
+			- **VIEW THIS LINK FOR LOOKS INTO MATHEMATICS WHEN BUILDING CMS**
+			- https://ieeexplore.ieee.org/abstract/document/1616403
+	- RNN is fully connected, and contains update on-line the RNN weights. **RESEARCH INTO THIS**. Two strategies applied for comparative reasons - Free-Run (FR), and the Teacher-Forcing (TF).
+	- 3 layer NN with tan-sigmoid and linear activation functions. Inputs for the available data, inputs of the NN, have been normalised for unity standard deviation and zero mean.
+	- RMSE and Correlation Coefficient to measure accuracy. 
+	- Results from the RTRL-FR method are superior to those obtained by the RTRL-TF method.
+	- **Accuracy for this method was very promising**.
+	
 - Blood glucose prediction model for type 1 diabetes based on artificial neural network with time-domain features
+	- ANN, time-domain attributes to predict blood glucose levels 15, 30, 45, 60 min in the future.
+	- Features are previous 30 min of BG measurements before a trained model is generated for each patient.
+	- Compares against many other data-driven BG predictors and claims it outperforms.
+	- Believes thta combining time-domain attributes into the input dataresulted in enhanced performance of most prediction models.
+	- *Might be worth looking at Gaussian processes / eXtreme Gradient Boosting*.
+	- **CGM values are the only input**. To improve prediction accuracy, time-domain features are also used.
+	- **Data preparation**
+		- Time-series dataset conerted into a set of paired inputs and desired outputs.
+		- Uses the 'direct method' to perform prediction of each horizon independently from other prediction. Returns a multi-step forecast by concatenating all of the predictions made.
+		- To perform this, a **sliding window approach (LOOK INTO THIS)** used for segementation of the time series dataset.
+	- **Time-domain features and prediction model**
+		- Use minimum, maximum, mean, std, peak to peak amplitude, median, kurtosis and skewness as time-domain features. Extracted from each window S generated by the sliding window approach.
+		- These time-domain features are appended to the matrix of data X to create a matrix of all the glucose readings within the window as well as the time-domain features.
+		- Uses a Multi-Layer Perceptron (MLP) model to predict blood glucose. Fully connected, multiple hidden layers, one node output layer. Each unit has its own bias.
+		- Back-propagation to calculate gradients. Mean squared error between prediction and target values.
+		- **Grid search algorithm (LOOK INTO)** to automatically select the best parameters for the proposed MLP model.
+	- **Data cleaning**
+		- All missing data was imputed through spline interpolation.
+		- Savitzky - Golay technique to filter noise.
+		- 80% train/test split.
+		- Features normalised using min-max scaling.
+		- **Uses a glucose-specific metric introduced by Favero et al.** called **gMSE** that applies specific pentalties to MSE.
+		- This penalty function penalises an overestimation in hypoglycemia, and an underestimation in hyperglycemia.
+	- Models in general performed better for shorter range PH.
+	- Found that customising window sizes etc. for each patient improved the prediction performance.
+	- A **recursive strategy** can be made for predictions where you recursively make shorter predictions to generate a longer term prediction.
 
 - Deep Physiological Model for Blood Glucose Prediction in T1DM Patients
-
+	- Carbohydrate and insulin arsorption in physiological models are modeled using a RNN inplmeneted using LSTM cells.
+	- Trains and validates on both simulated data using the AIDA diabetes software simulation program and with real patient data from the D1NAMO open dataset.
+	- Hayeri added heart rate, step-count and insulin information to the BG signal. Proposed algorithm applied to 9 children and the model was able to the predict the user's future glucose values with a 93% accuracy for 60 min ahead of time.
+	- 
+	
 - A Deep Learning Algorithm For Personalized Blood Glucose Prediction
 
 - Blood Glucose Prediction With VMD and LSTM Optimized by Improved Particle Swarm Optimization
@@ -68,3 +189,6 @@
 - Application of improved LightGBM model in blood glucose prediction
 
 - Blood Glucose Prediction with Variance Estimation Using Recurrent Neural Networks
+
+![[Pasted image 20221107113116.png]]
+![[Pasted image 20221107133425.png]]
