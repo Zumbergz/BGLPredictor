@@ -178,11 +178,67 @@
 	- Carbohydrate and insulin arsorption in physiological models are modeled using a RNN inplmeneted using LSTM cells.
 	- Trains and validates on both simulated data using the AIDA diabetes software simulation program and with real patient data from the D1NAMO open dataset.
 	- Hayeri added heart rate, step-count and insulin information to the BG signal. Proposed algorithm applied to 9 children and the model was able to the predict the user's future glucose values with a 93% accuracy for 60 min ahead of time.
-	- 
+	- Plans to train an RNN to figure out the impact of fast insulin, slow insulin and carb intake on BG levels. Combine this with RNN using CGM data to try and obtain an accurate prediction on the variation in BGL.
+	- ![[Pasted image 20221107151426.png]]
+	- Question marks represent the number of time samples fed into the model. A time span of 9 h is being used and the simulated data will produce data samples every 15 min. Therefore 36 samples per 9h window.
+	- As future values for meals and insulin aren't fed into the model, the model will generate an estimate about what will happen to the glucose signal if no external action is taken by the patient. Therefore, the model could be used to warn the user in advance about negative episodes if no action is taken and recommend particular actions to avoid such episodes.
+	- **Clarke Error Grid** used for analysis (**Seems Important**).
+	- *Follows the general trend where models appear to be able to predict rising BG levels better than falling levels*.
+	- **Model performs noticeably worse on real patient data than the simulated data**.
+	- https://www.mdpi.com/1424-8220/20/14/3896/htm; **There is an appendix with model code**
 	
 - A Deep Learning Algorithm For Personalized Blood Glucose Prediction
+	- Uses a **CNN** !! And Ohio dataset
+	- RMSE to measure error.
+	- Converts the task into a classification task where the change between the current and future glucose value is split into 256 different categories. Preidction results over a 30 minute PH.
+	- Doesn't use many of the fields in the Ohio dataset as they were found to increase variance and reduce performance.
+	- Replaces missing values with first-order interpolation. For testing data, first-order extrapolation is taken to ensure the future values are not involved. **The predictions vy extrapolated intervals are ignored to guarantee that the result hs the same length as the CGM testing data when evaluating the performance.**
+	- *Introduces a part of the data with the longest continuous interval from other subjects and combines them into the current subject to form an extended training data.* This strategy keeps 50% of the data as the current subject and the other 5 patients contribute the other half.
+	- Uses a median filter to remove noise at the cost of slightly raising the bias of the model. *This median filter is not used on the testing data*.
+	- Believes the WaveNet model their CNN is based on is more time efficient for training and testing with smaller weights compared with RNNs.
+	- **Model Components**
+		- Main components in WaveNet are **causal convolutional layers.**
+		- Uses **Dilated Convolutional Neural Netowrk layers** (**Maybe research but doesn't seem hugely relevant**) which increases the receptive field of the input signal. 
+		- 3 DCNN blocks with each containing 5 layers of diluted convolution.
+		- ReLu activation function where $ReLu(x) = max(x, 0)$.
+		- **Sparse softmax cross entropy cost function for optimisation.**
+		- Uses **adaptive moment estimatoin optimiser** to adjust training steps.
+	- **Results**
+		- RMSE (AGAIN) for error calculation (*Lots of researchers use RMSE but could be interesting to use time within range/clarke error grid as well)*.
+		- Curve fluctuates a lot around insulin/meal events (struggling to properly learn the impact of these events).
+		- Lots of errors aroud the extrapolated regions of the data. First-order interpolation seemed to perform best for replacing regions of missing data. .
+		- Subjects 575 and 591, predictions perform much worse. Large gap in training dataset. The data of these patients also fluctuates a lot more.
+		- Differences between patients that use "humalog" vs "novalog" insulin.
+		- Overall the model seems to have worse accuracy than deep learning models studied earlier, but is much more efficient.
 
 - Blood Glucose Prediction With VMD and LSTM Optimized by Improved Particle Swarm Optimization
+	- **This paper is way beyond my pay grade**.
+	- Uses **Variational Model Decomposition??** to decompose and obtain the **intrinsic mode functions ??** of blood glucose components in different frequency bands, so as to reduce the non-stationarity of blood glucose time series.
+	- Model seemed to perform better than LSTM, VMD-LSTM and VMD-PSO-LSTM methods.
+	- **Variational Model Decomposition????**
+		- **Maths too hard**
+		- Finding the optimal solution of the variational problem.
+		- Involves 3 concepts : classic Wiener filtering, Hibert transform and frequency mixing.
+	- **LSTM**
+		- LSTM is an RNN which learns long-term dependent information and avoids the problem of gradient disappearance.
+		- In the hidden layer neurons of the RNN, LSTM adds a structure called a memory cell to remember past information, as well as three types of gate (input / forget / output) to control the use of historical information.
+		- Key part is cell state $C$ which keeps the cell state storage at time t, and the cell state storage is adjusted by the forget gate $f_t$ and input gate $i_t$. The forget gate is for the celll to remember or forget its previous state $C_{t-1}$; the input gate will allow or prevent the input signal from updating the unit state; the output gate is the output of the unit state C and is transmitted to the next cell.
+		- To allow the LSTM to predict a linear regression layer is added:
+		- $y_t = W_{y0}h_t + b_y$, where $y_t$ represents the output of the final prediction, $b_t$ is the threshold of the linear regression layer.
+	- **Particle Swarm Optimisation**
+		- Initialises to obtain a set of random solutions and then iterates and finds the optimal solution by tracking the best particles in the current space.
+		- Particles update their positions based on the best value they can get and the best value of their entire group.
+		- Improved by adding a nonlinear variable inertia weight. Helps the model to converge faster on the optimal point.
+		- This particle swarm optimisation is used to determine the optimal hyper parameters of the LSTM in order to match the network structure with the characteristics of the glucose concentration data.
+	- **Steps of model training**
+		1. Init parameters e.g. population size, number of iterations, learning factors and the limited interval of location and speed.
+		2. Initialise the position and velocity of the particles.
+		3. Determine the evaluation function of particles. Assign ecah particle to one of the parameters of the LSTM. Trains with training set, then verifies with the verfication set; taking into account both the training sample error and the verification sample error.
+		4. Calculat efitness value for each particle position. The personal best and the group best are determined according to the initial particle fitness, and the best position for each particle is taken as its historical best position.
+		5. During each iteration, update the particle's own speed and position through personal and global best.
+		6. After satisfying the max number of iterations, input the prediction data and output the prediction value.
+	- https://public.jaeb.org/direcnet/stdy/; Source of data, open for download.
+	- 
 
 - A Multi-Patient Data-Driven Approach to Blood Glucose Prediction
 
