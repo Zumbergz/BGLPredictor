@@ -192,7 +192,7 @@
 	- RMSE to measure error.
 	- Converts the task into a classification task where the change between the current and future glucose value is split into 256 different categories. Preidction results over a 30 minute PH.
 	- Doesn't use many of the fields in the Ohio dataset as they were found to increase variance and reduce performance.
-	- Replaces missing values with first-order interpolation. For testing data, first-order extrapolation is taken to ensure the future values are not involved. **The predictions vy extrapolated intervals are ignored to guarantee that the result hs the same length as the CGM testing data when evaluating the performance.**
+	- Replaces missing values with first-order interpolation. For testing data, first-order extrapolation is taken to ensure the future values are not involved. **The predictions of extrapolated intervals are ignored to guarantee that the result has the same length as the CGM testing data when evaluating the performance.**
 	- *Introduces a part of the data with the longest continuous interval from other subjects and combines them into the current subject to form an extended training data.* This strategy keeps 50% of the data as the current subject and the other 5 patients contribute the other half.
 	- Uses a median filter to remove noise at the cost of slightly raising the bias of the model. *This median filter is not used on the testing data*.
 	- Believes the WaveNet model their CNN is based on is more time efficient for training and testing with smaller weights compared with RNNs.
@@ -234,17 +234,106 @@
 		1. Init parameters e.g. population size, number of iterations, learning factors and the limited interval of location and speed.
 		2. Initialise the position and velocity of the particles.
 		3. Determine the evaluation function of particles. Assign ecah particle to one of the parameters of the LSTM. Trains with training set, then verifies with the verfication set; taking into account both the training sample error and the verification sample error.
-		4. Calculat efitness value for each particle position. The personal best and the group best are determined according to the initial particle fitness, and the best position for each particle is taken as its historical best position.
+		4. Calculate fitness value for each particle position. The personal best and the group best are determined according to the initial particle fitness, and the best position for each particle is taken as its historical best position.
 		5. During each iteration, update the particle's own speed and position through personal and global best.
 		6. After satisfying the max number of iterations, input the prediction data and output the prediction value.
 	- https://public.jaeb.org/direcnet/stdy/; Source of data, open for download.
-	- 
+	- Uses **RMSE and Clarke Error Grid** to evaluate performance.
+	- The **IPSO** step shows significant improvements for the 45/60 min PH versus the normal **VMD-LSTM** memory; believes the IPSO gives better otimisation and better hyperparameters for the LSTM.
+	- IPSO performs better than PSO optimisation (to be expected due to the faster convergence due to the variable inertia weight).
+	- **Conclusions**
+		- The IPSO leads to a largely increased computational load
+		- Need to do more work on incorporating more patient-specific characteristics for better long-term predictions.
 
 - A Multi-Patient Data-Driven Approach to Blood Glucose Prediction
-
+	- Interested in finding methods that have been learned from multiple patients and are applicable to completely new patients.
+	- Tried the approaches on a Non-Linear Autoregressive (NAR) neural network and on LSTM networks.
+	- Compares to three literature approaches, based on feed-forward neural networks, autoregressive models, and recurrent neural networks.
+	- NAR obtained good ccuracy for short-term predictions only.
+	- LSTM did very well for both short- and long-term glucose-level inference.
+	- Believes they can improve the performance by considerably enlarging the dataset used for learning the model (by combining all patient data).
+	- **Pre-Processing**
+		- Applied **Tikhonov regularisation** (**RESEARCH into this as we may want to apply)**, which is widely used in time series analysis and in glucose level prediction.
+	- **Non-Linear Autoregressive Neural Network**
+		- NAR computes the value of a signal $y$ at time $t$ using n past values of $y$ as reressors, as follows:
+			- $y(t) = f(y(t-1), y(t-2), ... , y(t-n)) + e(t)$
+			- where $f$ is an unknown non-linear function and $e(t)$ is the model approximation error at time $t$.
+		- Function f(.) is computed using a multi-layer NN. At time $t$ the NN is fed with the $n$ past values of the signal $y$. 
+		- **Levenberg-Marquardt** backpropagation procedure (LMBP) used for backpropagation.
+		- As it doesn't need to calculate Hessian matrices, it helps to reduce training times.
+		- Uses **optimal Brain Surgeon method** to prune the initial fully-connected structure of the network and (hopefully) reduce computational overheads.
+		- Uses **Lipschitz quotients (Research if considering autoregressive networks)** to determine the optimal number of regressors for the model.
+	- **LSTM Architecture**
+		- Avoids vanishing/exploding gradient problem
+		- Layer of 30 LSTM units and a single ouput layer (dense), with a number of units equal to the future glucose samples that need to be predicted).
+		- To optimise hyper parameters and prevent under/over-fitting used an initial learning rate of 0.001, with dropout. At each stage, individual nodes and corresponding links are randomly dropped out of the model, leaving a reduced network
+		- Helps to reduce co-dependency of network parameters and hence overfitting.
+		- **Adaptive Moment Estimation (Adam)** for optimisation. Leverages adaptive learning rates to set individual learning rate per each parameter. We can then combine this with techniques such as stochastic gradient descent; proved to be particularly suitable for non-stationary time-series with a lot of noise.
+	- Test set **completely independent from training set.**
+	- **Analytical Assessment**
+		- **Time lag** - prediction delay, defined as minimum time-shift between the predicted and observed signals which provides the heighest correlation coefficient between them.
+		- **FIT** - the ratio of RMSE and the root mean square difference between the observed signal and its mean value.
+		- **All models benefitted from the pre-processing of the training data with Tikhonov.**
+		- **The LSTM obtained by far the best prediction performance**
+			- Normal Feedforward NN was the worst.
+			- NAR, AR and RNN methods were comparably successful.
+			- RMSE gradually increased with regards to prediction time.
+			- Prediction lag didn't occur in the LSTM until a 60 minute PH was introduced.
+	- **Clinical Assessment**
+		- Uses **Clarke Error Grid** to perform a more clinical assessment of the models. (A and B **clinically acceptable**)
+			- **A**: values within 20% of the reference.
+			- **B**: values that, in spite of being outside 20% of the reference, do not lead to inappropriate treatment of the patient.
+			- **C**: values leading to inappropriate treatment, but without dangerous consequences for the patient.
+			- **D**: values leading to potentially dangerous failure to detect hypoglycaemic or hyperglycaemic events.
+			- **E**: values leading to treat hypoglycaemia instead of hyperglycaemia and vice-versa.
+		- ~95% within zone A for 30 min PH.
+		
 - Application of improved LightGBM model in blood glucose prediction
+	- Improved **LightGBM** model based on **Bayesian hyper parameter optimisation**.
+	- RMSE of 0.5961
+	- **LightGBM Model**
+		- LightGBM is mainly a decision tree based on gradient-based one-side sampling (GOSS), exclusive feature bundling (EFB) and a histogram and leaf-wise growth strategy with a depth limit.
+		- **GOSS** - keep all of the large gradient samples and perform random sampling on the small gradient samples accoridng to a proportion.
+		- **EFB** - divide the features into a smaller number of mutually exclusive bundles, that is, it is impossible to find an accurate solution in polynomial time. Approximates the solution by selecting a small number of sample points that are not mutually exclusive and allowed between features.
+		- **Histogram algorithm** - discretise continuous floating point features into $k$ integers, and construct a histogram with width $k$ at the same time.
+		- LightGBM uses a leaf-wise growth strategy with a depth limit to find a leaf node with the largest split gain in all of the current leaf nodes, then splits etc.
+		- **Some complicated maths, if we decide to do implement this it'll be worth going through some proper tutorials.**
+	- **Bayesian Hyper-Parameter Optimisation Algorithm**
+		- Establish a substitute function based on the evaluation result of the past objective to find the minimum value of the objective function.
+		- The substitute function established in this process is easier to optimise than the original objective function, and the input value to be evaluated is selected by applying a certain standard to the proxy function.
+		- Should reduce the amount of time it takes the model to converge by taking into account the previous evaluation when trying a new set of hyperparameters.
+		- Obtained optimal parameters with MSE as the evaluation indicator.
+	- **Improved LightGBM Model Based on Bayesian Hyper-Parameter Optimisation Algorithm**
+		1. Divide the dataset into training/testing, process missing values, analyse the weight fo the influence of the eigenvalues on the results, delete useless eigenvalues, delete outliers.
+		2. Use the Bayesian hyper-parameter optimisation algorithm for the parameter optimisation of the LightGBM model, and the HY_LightGBM model is constructed and trained.
+		3. Use the HY_LightGBM model for prediction and output the results.
+	- Analysed missing values in the original dataset to obtain the proportion of the missing data. Deleted features with large amounts of missing values.
+	- Uses eigenvalue analysis **(?)** to remove invalid eigenvalues and improve accuracy of the experiment by ignoring unrelevant features.
+	- Evaluated prediction with MSE, RMSE, and determination coefficient R2 (R-Square). 
+	- Seemed to perform very well for prediction (**RMSE 0.7721**)
+	- The hyperparameter optimisation significantly increases the time for the model to be trained, but does also noticeably improve prediction accuracy.
+	- This model also outperformed XGBoost and CatBoost.
+	- Other parameter optimisation algorithms include **Genetic Algorithms** and **Random Searching Algorithms**.
+	- Believes this model has a much stronger generalisation ability than others, and doesn't need to be retrained.
 
 - Blood Glucose Prediction with Variance Estimation Using Recurrent Neural Networks
 
+Start Writing up.
+Write out what you searched, what you found out and the conclusions you drew from that.
 ![[Pasted image 20221107113116.png]]
 ![[Pasted image 20221107133425.png]]
+
+## Gradient Boosting
+
+Term 'gradient boosting' comes from the idea of 'boosting' or improving a single weak model by combining it with a number of other weak models, in order to generate a collectively strong model.
+**Gradient Boosting** is an extension of boosting where the process of additively generating weak models is formalised as a **gradient descent** algorithm over an objective function.
+Is a **supervised learning algorithm**.
+Often uses **decision** trees as the model for the gradient boosting.
+
+**Residual** - value obtained when subtracting the predicted label from the true label.
+Each iteration, we try and predict the residuals by adding new trees to the main tree. By doing this, we are effectively performing a gradient descent algorithm on the squared error loss function for the given training instances.
+
+### XGBoost
+XGBoost also uses second-order gradients of the loss function in addition to the first-order gradients, based on a Taylor expansion of the loss function.
+
+Ends up forming a more sophisticated objective function containing regularisation terms. This extension of the loss function adds penalty terms for adding new decision tree leaves to the model with penalty proportional to the size of the leaf weights. These penalty terms inhibit the growth of the model to prevent overfitting.
