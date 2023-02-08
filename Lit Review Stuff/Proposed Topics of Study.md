@@ -1,15 +1,16 @@
 **Preprocessing**
 1. **Kalman Filtering?? to reduce noise in data**.
-2. **Tikhonov Regularisation??** widely used regularisation method in time series analysis and in glucose level prediction. (*seems to be the better option of the two*)
-3. **Spline interpolation** for missing data?
-4. **First-order interpolation** for missing data? (*seems to be the better option of the two.*)
+2. **Tikhonov Regularisation??** widely used regularisation method in time series analysis and in glucose level prediction. 
+3. **Min-Max Scaling** for feature normalisation??
+4. **Spline interpolation** for missing data?
+5. **First-order interpolation** for missing data? (*seems to be the better option of the two.*)
 
 **Parameter Optimisation**
 1. **Bayesian Hyper-parameter optimisation??**
 2. **Adaptive Moment Estimation??**
 3. **Grid Search Algorithm**
 
-*When we come to building models have a look into these three, have a look at them and pick the one that seems the most relevant option.*
+*When we come to building models have a look into these three, and pick the one that seems the most relevant option.*
 
 **Learning Techniques**
 1. Start off with a simple LSTM (not RNN to avoid gradient explosion/disappearance) for prediction solely via CGM. Contrast this RNN with a basic **autoregressive mode**l to argue why we'll use NNs for the future. 
@@ -39,3 +40,5 @@
 
 **If we want to use another dataset, we have this link**:
 https://public.jaeb.org/direcnet/stdy/
+
+**Think like a pancreas**

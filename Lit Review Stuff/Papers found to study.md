@@ -132,7 +132,7 @@
 		- The effect of a short acting insulin intake
 		- The effect of intermediate acting insulin
 		- The effect of carbohydrate intake on blood glucose absorption from the gut.
-	- Argues most physiological models as data sources can only be used for educational purposes as they ignore a numbe ro ffactors associated with glucose metabolism.
+	- Argues most physiological models as data sources can only be used for educational purposes as they ignore a number of factors associated with glucose metabolism.
 	- CMS passed as inputs to NN along with current BGL.
 	- **Mathematical models**
 		- After the injection of D units of insulin, the change in plasma insulin concentration I is given as:
@@ -150,7 +150,7 @@
 	- ANN, time-domain attributes to predict blood glucose levels 15, 30, 45, 60 min in the future.
 	- Features are previous 30 min of BG measurements before a trained model is generated for each patient.
 	- Compares against many other data-driven BG predictors and claims it outperforms.
-	- Believes thta combining time-domain attributes into the input dataresulted in enhanced performance of most prediction models.
+	- Believes that combining time-domain attributes into the input dataresulted in enhanced performance of most prediction models.
 	- *Might be worth looking at Gaussian processes / eXtreme Gradient Boosting*.
 	- **CGM values are the only input**. To improve prediction accuracy, time-domain features are also used.
 	- **Data preparation**
@@ -190,7 +190,7 @@
 - A Deep Learning Algorithm For Personalized Blood Glucose Prediction
 	- Uses a **CNN** !! And Ohio dataset
 	- RMSE to measure error.
-	- Converts the task into a classification task where the change between the current and future glucose value is split into 256 different categories. Preidction results over a 30 minute PH.
+	- Converts the task into a classification task where the change between the current and future glucose value is split into 256 different categories. Prediction results over a 30 minute PH.
 	- Doesn't use many of the fields in the Ohio dataset as they were found to increase variance and reduce performance.
 	- Replaces missing values with first-order interpolation. For testing data, first-order extrapolation is taken to ensure the future values are not involved. **The predictions of extrapolated intervals are ignored to guarantee that the result has the same length as the CGM testing data when evaluating the performance.**
 	- *Introduces a part of the data with the longest continuous interval from other subjects and combines them into the current subject to form an extended training data.* This strategy keeps 50% of the data as the current subject and the other 5 patients contribute the other half.
