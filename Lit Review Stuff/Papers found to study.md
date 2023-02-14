@@ -107,7 +107,8 @@
 	- **It was found convenient to reduce noise in the data by prefiltering them using a casual Kalman filtering method**. However, the assessment of the prediction in the evaluation section is done by taking the original data profiles as reference.
 	- **NN architecture**
 		- 3 layers; 10 neurons, 5 neuron, 1 neuron. 
-		- Transfer function is sigmoidal in both layers. Neurons are totally connected and feed forward. The output layer has a linear transfer function.
+		- Transfer function is sigmoidal in both layers. Neurons are totally connected and feed forward
+. The output layer has a linear transfer function.
 		- The NN takes in glucose measurements **up to 20 minutes before the current time**. As the sampling rate varies from one CGM system to another, the number of NN inputs is different for each dataset.
 		- The ouptut of the network is the glucose prediction at the PH time.
 	- **ARM architecture**
