@@ -5,7 +5,7 @@
 2. Overview, look deeper for examples
 3. ANN + ARM
 	- CGM data
-	- casual Kalman filter
+	- causal Kalman filter
 4. Compartmental -> RNN
 	- Has update on-line weights
 	- 3 layers

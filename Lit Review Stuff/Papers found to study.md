@@ -214,7 +214,7 @@
 
 - Blood Glucose Prediction With VMD and LSTM Optimized by Improved Particle Swarm Optimization
 	- **This paper is way beyond my pay grade**.
-	- Uses **Variational Model Decomposition??** to decompose and obtain the **intrinsic mode functions ??** of blood glucose components in different frequency bands, so as to reduce the non-stationarity of blood glucose time series.
+	- Uses **Variational Mode Decomposition??** to decompose and obtain the **intrinsic mode functions ??** of blood glucose components in different frequency bands, so as to reduce the non-stationarity of blood glucose time series.
 	- Model seemed to perform better than LSTM, VMD-LSTM and VMD-PSO-LSTM methods.
 	- **Variational Model Decomposition????**
 		- **Maths too hard**
