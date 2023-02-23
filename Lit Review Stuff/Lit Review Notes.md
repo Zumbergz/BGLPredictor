@@ -46,3 +46,4 @@ The three most pertinent ML techniques which have been applied to the task of bl
 **Articles**:
 https://www.endo.theclinics.com/article/S0889-8529(19)30091-X/fulltext
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6661119/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8398465/
