@@ -6,9 +6,9 @@ To guide the development of the project, the following objectives have been iden
 - Obtain, understand and configure a suitable Continuous Glucose Monitoring (CGM) dataset.
 - Perform a literature review on existing approaches taken to perform real time blood glucose prediction.
 - Implement a selection of the researched approaches.
-- Experiment with hyperparameters on different approaches to try and achieve optimal accuracy for the approach as stated by the government nice guidelines.
+- Experiment with hyperparameters on different approaches to try and achieve optimal accuracy for the approach as stated by scientific metrics (RMSE).
 - Experiment with the different approaches over varying prediction horizons.
-- Produce a visualisation to view the time-in-range performance of the different prediction techniques over differing time horizons.
+- Produce visualisations to view the performance of the different prediction techniques over differing time horizons.
 - Analyse and compare the effectiveness of the different approaches for real time blood glucose prediction.
 
 ## Requirements
