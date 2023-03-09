@@ -50,3 +50,9 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8398465/
 
 **Code:**
 https://github.com/kriventsov/Clarke-and-Parkes-Error-Grids/blob/master/error_grids.py
+
+Kalman Filter:
+https://github.com/tmramalho/smallParticleFilter/blob/eadad1d124102dc4cc46d3ed3c8e8b3b39899b25/odeSolver.py#L1
+
+Kalman Smoothing BG:
+https://pubmed.ncbi.nlm.nih.gov/29994742/
