@@ -1,0 +1,35 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'PDF/main.blg'
+[63] biber:322> INFO - === Wed Apr 12, 2023, 20:14:29
+[73] Biber.pm:415> INFO - Reading 'PDF/main.bcf'
+[125] Biber.pm:943> INFO - Found 19 citekeys in bib section 0
+[136] Biber.pm:4256> INFO - Processing section 0
+[137] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[137] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[150] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[151] bibtex.pm:1653> INFO - LaTeX decoding ...
+[171] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[204] Utils.pm:293> WARN - month field 'Jun' in entry 't1d' is not an integer - this will probably not sort properly.
+[213] Utils.pm:293> WARN - month field 'Jun' in entry 'insulin' is not an integer - this will probably not sort properly.
+[226] Utils.pm:293> WARN - month field 'Oct' in entry 'pumpcgm' is not an integer - this will probably not sort properly.
+[233] Utils.pm:293> WARN - month field 'May' in entry 'world_2019' is not an integer - this will probably not sort properly.
+[234] Utils.pm:293> WARN - month field 'Apr' in entry 'bglfactors' is not an integer - this will probably not sort properly.
+[243] Utils.pm:293> WARN - month field 'Apr' in entry 'apsystems' is not an integer - this will probably not sort properly.
+[256] Utils.pm:293> WARN - month field 'May' in entry 'diatech' is not an integer - this will probably not sort properly.
+[262] Utils.pm:293> WARN - month field 'Sep' in entry 'pumpandmonitor' is not an integer - this will probably not sort properly.
+[272] Utils.pm:293> WARN - month field 'Apr' in entry 'whatisml' is not an integer - this will probably not sort properly.
+[292] Utils.pm:293> WARN - month field 'Dec' in entry 'whatisgd' is not an integer - this will probably not sort properly.
+[297] Utils.pm:293> WARN - month field 'Oct' in entry 'whatisgdimage' is not an integer - this will probably not sort properly.
+[318] Utils.pm:293> WARN - month field 'Jan' in entry 'paper3' is not an integer - this will probably not sort properly.
+[319] Utils.pm:293> WARN - BibTeX subsystem: /tmp/biber_tmp_5c3e/references.bib_113481.utf8, line 19, warning: 3 characters of junk seen at toplevel
+[320] Utils.pm:293> WARN - BibTeX subsystem: /tmp/biber_tmp_5c3e/references.bib_113481.utf8, line 25, warning: 3 characters of junk seen at toplevel
+[320] Utils.pm:293> WARN - BibTeX subsystem: /tmp/biber_tmp_5c3e/references.bib_113481.utf8, line 29, warning: 3 characters of junk seen at toplevel
+[320] Utils.pm:293> WARN - BibTeX subsystem: /tmp/biber_tmp_5c3e/references.bib_113481.utf8, line 31, warning: 3 characters of junk seen at toplevel
+[320] Utils.pm:293> WARN - BibTeX subsystem: /tmp/biber_tmp_5c3e/references.bib_113481.utf8, line 35, warning: 3 characters of junk seen at toplevel
+[348] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[349] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[349] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[349] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[369] bbl.pm:652> INFO - Writing 'PDF/main.bbl' with encoding 'UTF-8'
+[387] bbl.pm:755> INFO - Output to PDF/main.bbl
+[387] Biber.pm:128> INFO - WARNINGS: 17

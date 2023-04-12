@@ -4,7 +4,7 @@
 	- Accuracy measured as the **root mean square error (RMSE)** over 5 test days.
 	- St deviation over a 10 hour period was 4 times larger than over a 1 hour period.
 	- Control algorithms tend to be grouped into 2 broad categories:
-		- Proportional-integrial derivative (PID) controller.267/395 [===================>..........] - ETA: 1s - loss: 0.0015 - RMSE: 13.4563
+		- Proportional-integrial derivative (PID) controller.
 
 			- Classic feedback approach comparing the difference between the measured glucose level and the expected glucose level. (Known as the **proportional component**)
 			- **Integral component** - area under the curve between the measured glucose level and the expected glucose level.

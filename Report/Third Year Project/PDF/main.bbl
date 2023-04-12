@@ -1,0 +1,600 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{t1d}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8e53e7c3b40a8187dd59555ce9563d99}{%
+           family={DiMeglio},
+           familyi={D\bibinitperiod},
+           given={Linda\bibnamedelima A},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c8907cb230f8302b61107a9bed2ad71a}{%
+           family={Evans-Molina},
+           familyi={E\bibinithyphendelim M\bibinitperiod},
+           given={Carmella},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ad8a7ea8c00086dbd4f019dba8d19b61}{%
+           family={Oram},
+           familyi={O\bibinitperiod},
+           given={Richard\bibnamedelima A},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d713db5c7742e3a84cb69f4e7c74656}
+      \strng{fullhash}{9d713db5c7742e3a84cb69f4e7c74656}
+      \strng{bibnamehash}{9d713db5c7742e3a84cb69f4e7c74656}
+      \strng{authorbibnamehash}{9d713db5c7742e3a84cb69f4e7c74656}
+      \strng{authornamehash}{9d713db5c7742e3a84cb69f4e7c74656}
+      \strng{authorfullhash}{9d713db5c7742e3a84cb69f4e7c74656}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Lancet}
+      \field{month}{6}
+      \field{number}{10138}
+      \field{title}{Type 1 diabetes}
+      \field{volume}{391}
+      \field{year}{2018}
+      \field{pages}{2449\bibrangedash 2462}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1016/s0140-6736(18)31320-5
+      \endverb
+      \verb{urlraw}
+      \verb https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(18)31320-5/fulltext
+      \endverb
+      \verb{url}
+      \verb https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(18)31320-5/fulltext
+      \endverb
+    \endentry
+    \entry{insulin}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b451ae487bde3a3338f110920744afa8}{%
+           family={CDC},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b451ae487bde3a3338f110920744afa8}
+      \strng{fullhash}{b451ae487bde3a3338f110920744afa8}
+      \strng{bibnamehash}{b451ae487bde3a3338f110920744afa8}
+      \strng{authorbibnamehash}{b451ae487bde3a3338f110920744afa8}
+      \strng{authornamehash}{b451ae487bde3a3338f110920744afa8}
+      \strng{authorfullhash}{b451ae487bde3a3338f110920744afa8}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Centers for Disease Control and Prevention}
+      \field{month}{6}
+      \field{title}{Insulin Resistance and Diabetes}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.cdc.gov/diabetes/basics/insulin-resistance.html
+      \endverb
+      \verb{url}
+      \verb https://www.cdc.gov/diabetes/basics/insulin-resistance.html
+      \endverb
+    \endentry
+    \entry{t1dcauses}{misc}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{journaltitle}{Diabetes UK}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.diabetes.org.uk/diabetes-the-basics/types-of-diabetes/type-1
+      \endverb
+      \verb{url}
+      \verb https://www.diabetes.org.uk/diabetes-the-basics/types-of-diabetes/type-1
+      \endverb
+    \endentry
+    \entry{pumpcgm}{article}{}
+      \name{author}{4}{}{%
+        {{hash=627c1a9422c98e269173e3e4cef303db}{%
+           family={Pauley},
+           familyi={P\bibinitperiod},
+           given={Meghan\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=8d659d68c34d11b1735f4a8ea2c2bd59}{%
+           family={Tommerdahl},
+           familyi={T\bibinitperiod},
+           given={Kalie\bibnamedelima L.},
+           giveni={K\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=5b8234d90fe3e6dad0cc7c2d0f643e9c}{%
+           family={Snell-Bergeon},
+           familyi={S\bibinithyphendelim B\bibinitperiod},
+           given={Janet\bibnamedelima K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=c0380e98727c91cb83d706bebf238d0c}{%
+           family={Forlenza},
+           familyi={F\bibinitperiod},
+           given={Gregory\bibnamedelima P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b82814965044dca40054a10b0909ab2}
+      \strng{fullhash}{c0f403828600b07365d579d055a89de7}
+      \strng{bibnamehash}{c0f403828600b07365d579d055a89de7}
+      \strng{authorbibnamehash}{c0f403828600b07365d579d055a89de7}
+      \strng{authornamehash}{7b82814965044dca40054a10b0909ab2}
+      \strng{authorfullhash}{c0f403828600b07365d579d055a89de7}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Current Cardiology Reports}
+      \field{month}{10}
+      \field{number}{12}
+      \field{title}{Continuous Glucose Monitor, Insulin Pump, and Automated Insulin Delivery Therapies for Type 1 Diabetes: An Update on Potential for Cardiovascular Benefits}
+      \field{volume}{24}
+      \field{year}{2022}
+      \field{pages}{2043\bibrangedash 2056}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s11886-022-01799-x
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9589770/
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9589770/
+      \endverb
+    \endentry
+    \entry{WHOBGL}{online}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{journaltitle}{Who.int}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.who.int/data/gho/indicator-metadata-registry/imr-details/2380
+      \endverb
+      \verb{url}
+      \verb https://www.who.int/data/gho/indicator-metadata-registry/imr-details/2380
+      \endverb
+    \endentry
+    \entry{mayohyper}{online}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{journaltitle}{Mayo Clinic}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.mayoclinic.org/diseases-conditions/hyperglycemia/symptoms-causes/syc-20373631
+      \endverb
+      \verb{url}
+      \verb https://www.mayoclinic.org/diseases-conditions/hyperglycemia/symptoms-causes/syc-20373631
+      \endverb
+    \endentry
+    \entry{adahypo}{online}{}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{journaltitle}{Diabetes.org}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://diabetes.org/healthy-living/medication-treatments/blood-glucose-testing-and-control/hypoglycemia
+      \endverb
+      \verb{url}
+      \verb https://diabetes.org/healthy-living/medication-treatments/blood-glucose-testing-and-control/hypoglycemia
+      \endverb
+    \endentry
+    \entry{world_2019}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f5a7924e621e84c9280a9a27e1bcb7f6}{%
+           family={World},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {World Health Organization: WHO}%
+      }
+      \strng{namehash}{f5a7924e621e84c9280a9a27e1bcb7f6}
+      \strng{fullhash}{f5a7924e621e84c9280a9a27e1bcb7f6}
+      \strng{bibnamehash}{f5a7924e621e84c9280a9a27e1bcb7f6}
+      \strng{authorbibnamehash}{f5a7924e621e84c9280a9a27e1bcb7f6}
+      \strng{authornamehash}{f5a7924e621e84c9280a9a27e1bcb7f6}
+      \strng{authorfullhash}{f5a7924e621e84c9280a9a27e1bcb7f6}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Who.int}
+      \field{month}{5}
+      \field{title}{Diabetes}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.who.int/health-topics/diabetes#tab=tab_1
+      \endverb
+      \verb{url}
+      \verb https://www.who.int/health-topics/diabetes#tab=tab_1
+      \endverb
+    \endentry
+    \entry{bglfactors}{article}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{journaltitle}{Clinical Diabetes}
+      \field{month}{4}
+      \field{number}{2}
+      \field{volume}{36}
+      \field{year}{2018}
+      \field{pages}{202\bibrangedash 202}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.2337/cd18-0012
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5898168/
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5898168/
+      \endverb
+    \endentry
+    \entry{apsystems}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c6f36963fe1c3b63c2302dda42a35902}{%
+           family={and},
+           familyi={a\bibinitperiod},
+           given={Diabetes},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{3}{%
+        {NIDDK - National Institute of Diabetes}%
+        {Digestive}%
+        {Kidney Diseases}%
+      }
+      \strng{namehash}{c6f36963fe1c3b63c2302dda42a35902}
+      \strng{fullhash}{c6f36963fe1c3b63c2302dda42a35902}
+      \strng{bibnamehash}{c6f36963fe1c3b63c2302dda42a35902}
+      \strng{authorbibnamehash}{c6f36963fe1c3b63c2302dda42a35902}
+      \strng{authornamehash}{c6f36963fe1c3b63c2302dda42a35902}
+      \strng{authorfullhash}{c6f36963fe1c3b63c2302dda42a35902}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{National Institute of Diabetes and Digestive and Kidney Diseases}
+      \field{month}{4}
+      \field{title}{Artificial Pancreas}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/artificial-pancreas
+      \endverb
+      \verb{url}
+      \verb https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/artificial-pancreas
+      \endverb
+    \endentry
+    \entry{diatech}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e138ea2157b83741e613a32bf56f3bb0}{%
+           family={Kesavadev},
+           familyi={K\bibinitperiod},
+           given={Jothydev},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3fe6a2d8f8f0459402a251cbfc56512f}{%
+           family={Saboo},
+           familyi={S\bibinitperiod},
+           given={Banshi},
+           giveni={B\bibinitperiod}}}%
+        {{hash=85e6e26f9312397f6e7c70d33d6fea6a}{%
+           family={Krishna},
+           familyi={K\bibinitperiod},
+           given={Meera\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=a99d750f58d9a61fe280b374c9710145}{%
+           family={Krishnan},
+           familyi={K\bibinitperiod},
+           given={Gopika},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6f29511f3e2019989dcaa75164a359e}
+      \strng{fullhash}{2f2fbf36340dc8f6f5e1324a0f9c4b78}
+      \strng{bibnamehash}{2f2fbf36340dc8f6f5e1324a0f9c4b78}
+      \strng{authorbibnamehash}{2f2fbf36340dc8f6f5e1324a0f9c4b78}
+      \strng{authornamehash}{b6f29511f3e2019989dcaa75164a359e}
+      \strng{authorfullhash}{2f2fbf36340dc8f6f5e1324a0f9c4b78}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Diabetes Therapy}
+      \field{month}{5}
+      \field{number}{6}
+      \field{title}{Evolution of Insulin Delivery Devices: From Syringes, Pens, and Pumps to DIY Artificial Pancreas}
+      \field{volume}{11}
+      \field{year}{2020}
+      \field{pages}{1251\bibrangedash 1269}
+      \range{pages}{19}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s13300-020-00831-z
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s13300-020-00831-z
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s13300-020-00831-z
+      \endverb
+    \endentry
+    \entry{penandglucometer}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=e8187d83a700083cab577ba9792d0518}{%
+           family={Abidika},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8187d83a700083cab577ba9792d0518}
+      \strng{fullhash}{e8187d83a700083cab577ba9792d0518}
+      \strng{bibnamehash}{e8187d83a700083cab577ba9792d0518}
+      \strng{authorbibnamehash}{e8187d83a700083cab577ba9792d0518}
+      \strng{authornamehash}{e8187d83a700083cab577ba9792d0518}
+      \strng{authorfullhash}{e8187d83a700083cab577ba9792d0518}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Dreamstime.com}
+      \field{title}{Syringe pen and glucometer}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.dreamstime.com/stock-photo-syringe-pen-glucometer-insulin-blood-glucose-meter-showing-normal-blood-glucose-image41249489
+      \endverb
+      \verb{url}
+      \verb https://www.dreamstime.com/stock-photo-syringe-pen-glucometer-insulin-blood-glucose-meter-showing-normal-blood-glucose-image41249489
+      \endverb
+    \endentry
+    \entry{pumpandmonitor}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{journaltitle}{UMass Chan Medical School}
+      \field{month}{9}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.umassmed.edu/dcoe/diabetes-education/pumps_and_cgm/
+      \endverb
+      \verb{url}
+      \verb https://www.umassmed.edu/dcoe/diabetes-education/pumps_and_cgm/
+      \endverb
+    \endentry
+    \entry{whatisml}{article}{}
+      \name{author}{3}{}{%
+        {{hash=45de6a8a223c275a82b99a163a7e38ce}{%
+           family={Janiesch},
+           familyi={J\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=cee5ea9696163cef931b7b39b82fb367}{%
+           family={Zschech},
+           familyi={Z\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=dbebb0af9fd14aa2bc0dac4dcbff5225}{%
+           family={Heinrich},
+           familyi={H\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{67c5dc5bfd4fb8fc3f8147ab27b6c597}
+      \strng{fullhash}{67c5dc5bfd4fb8fc3f8147ab27b6c597}
+      \strng{bibnamehash}{67c5dc5bfd4fb8fc3f8147ab27b6c597}
+      \strng{authorbibnamehash}{67c5dc5bfd4fb8fc3f8147ab27b6c597}
+      \strng{authornamehash}{67c5dc5bfd4fb8fc3f8147ab27b6c597}
+      \strng{authorfullhash}{67c5dc5bfd4fb8fc3f8147ab27b6c597}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronic Markets}
+      \field{month}{4}
+      \field{number}{3}
+      \field{title}{Machine learning and deep learning}
+      \field{volume}{31}
+      \field{year}{2021}
+      \field{pages}{685\bibrangedash 695}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s12525-021-00475-2
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s12525-021-00475-2
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s12525-021-00475-2
+      \endverb
+    \endentry
+    \entry{whatisnn}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=e3cc61c90e01ae1ec97ccc99825026ab}{%
+           family={Grossi},
+           familyi={G\bibinitperiod},
+           given={Enzo},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1628272f2ec06eba2d45a03206d3b19d}{%
+           family={Buscema},
+           familyi={B\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Lippincott, Williams & Wilkins}%
+      }
+      \strng{namehash}{a152e8bb9c94e6cb4d94fe6012dd8e96}
+      \strng{fullhash}{a152e8bb9c94e6cb4d94fe6012dd8e96}
+      \strng{bibnamehash}{a152e8bb9c94e6cb4d94fe6012dd8e96}
+      \strng{authorbibnamehash}{a152e8bb9c94e6cb4d94fe6012dd8e96}
+      \strng{authornamehash}{a152e8bb9c94e6cb4d94fe6012dd8e96}
+      \strng{authorfullhash}{a152e8bb9c94e6cb4d94fe6012dd8e96}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{title}{Introduction to artificial neural networks}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/5847739_Introduction_to_artificial_neural_networks
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/5847739_Introduction_to_artificial_neural_networks
+      \endverb
+    \endentry
+    \entry{whatisnnimage}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{journaltitle}{Readthedocs.io}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://ml-cheatsheet.readthedocs.io/en/latest/nn_concepts.html
+      \endverb
+      \verb{url}
+      \verb https://ml-cheatsheet.readthedocs.io/en/latest/nn_concepts.html
+      \endverb
+    \endentry
+    \entry{whatisgd}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=7a9b46ab6d983a85dd4d9a1aa64a3945}{%
+           family={Ali},
+           familyi={A\bibinitperiod}}}%
+        {{hash=4c69ebf241a44dce0d3de35e27b21c0b}{%
+           family={Ahmed},
+           familyi={A\bibinitperiod},
+           given={Haval\bibnamedelima Abdulkarim},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {unknown}%
+      }
+      \strng{namehash}{083236e6418b3263e9e9dd110e5f1884}
+      \strng{fullhash}{083236e6418b3263e9e9dd110e5f1884}
+      \strng{bibnamehash}{083236e6418b3263e9e9dd110e5f1884}
+      \strng{authorbibnamehash}{083236e6418b3263e9e9dd110e5f1884}
+      \strng{authornamehash}{083236e6418b3263e9e9dd110e5f1884}
+      \strng{authorfullhash}{083236e6418b3263e9e9dd110e5f1884}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{month}{12}
+      \field{title}{Gradient Descent Algorithm: Case Study}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/356878797_Gradient_Descent_Algorithm_Case_Study#:~:text=Gradient%20descent%20is%20one%20of,logistic%20regression%2C%20etc...
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/356878797_Gradient_Descent_Algorithm_Case_Study#:~:text=Gradient%20descent%20is%20one%20of,logistic%20regression%2C%20etc...
+      \endverb
+    \endentry
+    \entry{whatisgdimage}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=27c414648f971f70a8d046ab9b573a08}{%
+           family={Crypto1},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{27c414648f971f70a8d046ab9b573a08}
+      \strng{fullhash}{27c414648f971f70a8d046ab9b573a08}
+      \strng{bibnamehash}{27c414648f971f70a8d046ab9b573a08}
+      \strng{authorbibnamehash}{27c414648f971f70a8d046ab9b573a08}
+      \strng{authornamehash}{27c414648f971f70a8d046ab9b573a08}
+      \strng{authorfullhash}{27c414648f971f70a8d046ab9b573a08}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Analytics Vidhya}
+      \field{month}{10}
+      \field{title}{How Does the Gradient Descent Algorithm Work in Machine Learning?}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.analyticsvidhya.com/blog/2020/10/how-does-the-gradient-descent-algorithm-work-in-machine-learning/
+      \endverb
+      \verb{url}
+      \verb https://www.analyticsvidhya.com/blog/2020/10/how-does-the-gradient-descent-algorithm-work-in-machine-learning/
+      \endverb
+    \endentry
+    \entry{paper3}{article}{}
+      \name{author}{8}{}{%
+        {{hash=00c4039aaf04ca5b09e5c46a060ac8b5}{%
+           family={Pérez-Gandía},
+           familyi={P\bibinithyphendelim G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bbd6e2e7c10f93364412bbb1be8b54c2}{%
+           family={Facchinetti},
+           familyi={F\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=64c5d33d7a2309efc05db4100b14f8f1}{%
+           family={Sparacino},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ff66dccbfd98eccccf643c2c535d6248}{%
+           family={Cobelli},
+           familyi={C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2b1dc559eaf106463893692d2afcec5b}{%
+           family={Gómez},
+           familyi={G\bibinitperiod},
+           given={E.J.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5c4398944648b38f126ef1cfd7ca02e4}{%
+           family={Rigla},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d3742ccc7cd59559aaf9ce2933ee4953}{%
+           family={Leiva},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=ede5e6370ed571ca00a2a027a3bd4545}{%
+           family={Hernando},
+           familyi={H\bibinitperiod},
+           given={M.E.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f1f6d75b54c72fb578add434a16bf81}
+      \strng{fullhash}{0d930d27251cb87ee6fc88c58841d0f6}
+      \strng{bibnamehash}{0d930d27251cb87ee6fc88c58841d0f6}
+      \strng{authorbibnamehash}{0d930d27251cb87ee6fc88c58841d0f6}
+      \strng{authornamehash}{2f1f6d75b54c72fb578add434a16bf81}
+      \strng{authorfullhash}{0d930d27251cb87ee6fc88c58841d0f6}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Diabetes Technology & Therapeutics}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Artificial Neural Network Algorithm for Online Glucose Prediction from Continuous Glucose Monitoring}
+      \field{volume}{12}
+      \field{year}{2010}
+      \field{pages}{81\bibrangedash 88}
+      \range{pages}{8}
+      \verb{doi}
+      \verb https://doi.org/10.1089/dia.2009.0076
+      \endverb
+      \verb{urlraw}
+      \verb https://pubmed.ncbi.nlm.nih.gov/20082589/
+      \endverb
+      \verb{url}
+      \verb https://pubmed.ncbi.nlm.nih.gov/20082589/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
