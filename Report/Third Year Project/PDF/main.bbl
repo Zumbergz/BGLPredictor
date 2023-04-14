@@ -594,6 +594,952 @@
       \verb https://pubmed.ncbi.nlm.nih.gov/20082589/
       \endverb
     \endentry
+    \entry{CGMacc}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0a604fbd2deed8b70e649d3dc182340a}{%
+           family={Freckmann},
+           familyi={F\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bb8587c8fbb9930b1347d05147c3c5e3}{%
+           family={Pleus},
+           familyi={P\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4e1d85a40589844295f51a1cb31c49a7}{%
+           family={Grady},
+           familyi={G\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4e89316c0eb3f1fe1dfddfa7c0bca7cd}{%
+           family={Setford},
+           familyi={S\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=27362c886b9ef49ee655421ab4f9d23e}{%
+           family={Levy},
+           familyi={L\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{feb00694669b060b5d1354254f526b9a}
+      \strng{fullhash}{84a650005cc2834a6fff18d91b5fbbba}
+      \strng{bibnamehash}{84a650005cc2834a6fff18d91b5fbbba}
+      \strng{authorbibnamehash}{84a650005cc2834a6fff18d91b5fbbba}
+      \strng{authornamehash}{feb00694669b060b5d1354254f526b9a}
+      \strng{authorfullhash}{84a650005cc2834a6fff18d91b5fbbba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Diabetes Science and Technology}
+      \field{month}{11}
+      \field{number}{3}
+      \field{title}{Measures of Accuracy for Continuous Glucose Monitoring and Blood Glucose Monitoring Devices}
+      \field{volume}{13}
+      \field{year}{2018}
+      \field{pages}{575\bibrangedash 583}
+      \range{pages}{9}
+      \verb{doi}
+      \verb https://doi.org/10.1177/1932296818812062
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6501529/#:~:text=At%20least%2095%20%25%20of%20measured,concentrations%20%E2%A9%BE100%20mg%2Fdl.
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6501529/#:~:text=At%20least%2095%20%25%20of%20measured,concentrations%20%E2%A9%BE100%20mg%2Fdl.
+      \endverb
+    \endentry
+    \entry{paper5}{article}{}
+      \name{author}{8}{}{%
+        {{hash=1fd7cea09cf5c44ff0a3dbdfac639696}{%
+           family={Alfian},
+           familyi={A\bibinitperiod},
+           given={Ganjar},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e65985bcc8442e6c8194f01eaeb4589d}{%
+           family={Syafrudin},
+           familyi={S\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b0d185e0da5a8ed2d138f5a9e276428a}{%
+           family={Anshari},
+           familyi={A\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=39c31f948af3516e5be5ac3e995c393e}{%
+           family={Benes},
+           familyi={B\bibinitperiod},
+           given={Filip},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c2cf6eb587155b84da1b2b0162f33c02}{%
+           family={Atmaji},
+           familyi={A\bibinitperiod},
+           given={Fransiskus\bibnamedelimb Tatas\bibnamedelima Dwi},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=5b64b7f4e100fd77e9e4a7a217a32148}{%
+           family={Fahrurrozi},
+           familyi={F\bibinitperiod},
+           given={Imam},
+           giveni={I\bibinitperiod}}}%
+        {{hash=5741f2349dffea41ae50f85201ab1772}{%
+           family={Hidayatullah},
+           familyi={H\bibinitperiod},
+           given={Ahmad\bibnamedelima Fathan},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=82c3177b1c240775c5408250309beea3}{%
+           family={Rhee},
+           familyi={R\bibinitperiod},
+           given={Jongtae},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{36deaf80142fffa09a402a70afe648b7}
+      \strng{fullhash}{c6544d780abd62a008539822d009a8d5}
+      \strng{bibnamehash}{c6544d780abd62a008539822d009a8d5}
+      \strng{authorbibnamehash}{c6544d780abd62a008539822d009a8d5}
+      \strng{authornamehash}{36deaf80142fffa09a402a70afe648b7}
+      \strng{authorfullhash}{c6544d780abd62a008539822d009a8d5}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biocybernetics and Biomedical Engineering}
+      \field{month}{10}
+      \field{number}{4}
+      \field{title}{Blood glucose prediction model for type 1 diabetes based on artificial neural network with time-domain features}
+      \field{volume}{40}
+      \field{year}{2020}
+      \field{pages}{1586\bibrangedash 1599}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.bbe.2020.10.004
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0208521620301248
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0208521620301248
+      \endverb
+    \endentry
+    \entry{CEGA}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c2897d4738d8fd643743ca427344b1f3}{%
+           family={Contributors},
+           familyi={C\bibinitperiod},
+           given={Wikipedia},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wikimedia Foundation}%
+      }
+      \strng{namehash}{c2897d4738d8fd643743ca427344b1f3}
+      \strng{fullhash}{c2897d4738d8fd643743ca427344b1f3}
+      \strng{bibnamehash}{c2897d4738d8fd643743ca427344b1f3}
+      \strng{authorbibnamehash}{c2897d4738d8fd643743ca427344b1f3}
+      \strng{authornamehash}{c2897d4738d8fd643743ca427344b1f3}
+      \strng{authorfullhash}{c2897d4738d8fd643743ca427344b1f3}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Wikipedia}
+      \field{month}{4}
+      \field{title}{Clarke Error Grid}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Clarke_Error_Grid
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Clarke_Error_Grid
+      \endverb
+    \endentry
+    \entry{whatisrnn}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6f46a859f5b9b1e6c5f5bdc8e43a3c09}{%
+           family={Sherstinsky},
+           familyi={S\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6f46a859f5b9b1e6c5f5bdc8e43a3c09}
+      \strng{fullhash}{6f46a859f5b9b1e6c5f5bdc8e43a3c09}
+      \strng{bibnamehash}{6f46a859f5b9b1e6c5f5bdc8e43a3c09}
+      \strng{authorbibnamehash}{6f46a859f5b9b1e6c5f5bdc8e43a3c09}
+      \strng{authornamehash}{6f46a859f5b9b1e6c5f5bdc8e43a3c09}
+      \strng{authorfullhash}{6f46a859f5b9b1e6c5f5bdc8e43a3c09}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physica D: Nonlinear Phenomena}
+      \field{month}{3}
+      \field{title}{Fundamentals of Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) network}
+      \field{volume}{404}
+      \field{year}{2020}
+      \field{pages}{132306}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.physd.2019.132306
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1808.03314
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1808.03314
+      \endverb
+    \endentry
+    \entry{whatisrnnimage}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{journaltitle}{Github.io}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+      \endverb
+      \verb{url}
+      \verb https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+      \endverb
+    \endentry
+    \entry{lstminfo}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=76c7e6beae1f51df6dacadcc37bed74a}{%
+           family={Saxena},
+           familyi={S\bibinitperiod},
+           given={Shipra},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{76c7e6beae1f51df6dacadcc37bed74a}
+      \strng{fullhash}{76c7e6beae1f51df6dacadcc37bed74a}
+      \strng{bibnamehash}{76c7e6beae1f51df6dacadcc37bed74a}
+      \strng{authorbibnamehash}{76c7e6beae1f51df6dacadcc37bed74a}
+      \strng{authornamehash}{76c7e6beae1f51df6dacadcc37bed74a}
+      \strng{authorfullhash}{76c7e6beae1f51df6dacadcc37bed74a}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Analytics Vidhya}
+      \field{month}{3}
+      \field{title}{Learn About Long Short-Term Memory (LSTM) Algorithms}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.analyticsvidhya.com/blog/2021/03/introduction-to-long-short-term-memory-lstm/
+      \endverb
+      \verb{url}
+      \verb https://www.analyticsvidhya.com/blog/2021/03/introduction-to-long-short-term-memory-lstm/
+      \endverb
+    \endentry
+    \entry{paper1}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7f4a506c25009fade2ecbc781dd26b00}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Gavin},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ca001a9a5d578e4fab05eec744195dc9}{%
+           family={Lehmann},
+           familyi={L\bibinitperiod},
+           given={Eldon\bibnamedelima D.},
+           giveni={E\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=8397db4183d196ebcc886ab47bbba8d9}{%
+           family={Sandham},
+           familyi={S\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ea8df230f1b165cedbb8865733fa0e3d}{%
+           family={Hamilton},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc7624c84651caa4dd4f4a9bdaa684f8}
+      \strng{fullhash}{f4455efb9171777a045963a42df69cea}
+      \strng{bibnamehash}{f4455efb9171777a045963a42df69cea}
+      \strng{authorbibnamehash}{f4455efb9171777a045963a42df69cea}
+      \strng{authornamehash}{bc7624c84651caa4dd4f4a9bdaa684f8}
+      \strng{authorfullhash}{f4455efb9171777a045963a42df69cea}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Electrical and Computer Engineering}
+      \field{title}{Blood Glucose Prediction Using Artificial Neural Networks Trained with the AIDA Diabetes Simulator: A Proof-of-Concept Pilot Study}
+      \field{volume}{2011}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 11}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1155/2011/681786
+      \endverb
+      \verb{urlraw}
+      \verb https://www.hindawi.com/journals/jece/2011/681786/
+      \endverb
+      \verb{url}
+      \verb https://www.hindawi.com/journals/jece/2011/681786/
+      \endverb
+    \endentry
+    \entry{AIDA}{article}{}
+      \name{author}{4}{}{%
+        {{hash=45f9c07afcd4f9ef8356ad45be5e466f}{%
+           family={Alloatti},
+           familyi={A\bibinitperiod},
+           given={Francesca},
+           giveni={F\bibinitperiod}}}%
+        {{hash=636027fec5ac9f004daa45e53096474e}{%
+           family={Bosca},
+           familyi={B\bibinitperiod},
+           given={Alessio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c6b4b172e25fa29c2ed4c33079b0698d}{%
+           family={Di\bibnamedelima Caro},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Luigi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=02c2a42168a1d1f51b2272a480bd27fe}{%
+           family={Pieraccini},
+           familyi={P\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c21d642e311540494ff6e48417e5f00}
+      \strng{fullhash}{8ab3b777832d9947fdb8d7a9939a5b8a}
+      \strng{bibnamehash}{8ab3b777832d9947fdb8d7a9939a5b8a}
+      \strng{authorbibnamehash}{8ab3b777832d9947fdb8d7a9939a5b8a}
+      \strng{authornamehash}{2c21d642e311540494ff6e48417e5f00}
+      \strng{authorfullhash}{8ab3b777832d9947fdb8d7a9939a5b8a}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Discover Artificial Intelligence}
+      \field{month}{9}
+      \field{number}{1}
+      \field{title}{Diabetes and conversational agents: the AIDA project case study}
+      \field{volume}{1}
+      \field{year}{2021}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s44163-021-00005-1
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8456073/#:~:text=The%20Artificial%20Intelligence%20Diabetes%20Assistant,a%20speech%2Dbased%20dialog%20system.
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8456073/#:~:text=The%20Artificial%20Intelligence%20Diabetes%20Assistant,a%20speech%2Dbased%20dialog%20system.
+      \endverb
+    \endentry
+    \entry{CMS}{article}{}
+      \name{author}{3}{}{%
+        {{hash=59693520b96de5d1f9558e3733e07727}{%
+           family={Rubenstein},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=90e2a9ad9a0fa5c71837be38fa7f63a2}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=db5c2bb16da7a3c752925b76fb3afe5c}{%
+           family={Frame},
+           familyi={F\bibinitperiod},
+           given={Mary\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{449912d0e815db2c8c359fc4ceba6032}
+      \strng{fullhash}{449912d0e815db2c8c359fc4ceba6032}
+      \strng{bibnamehash}{449912d0e815db2c8c359fc4ceba6032}
+      \strng{authorbibnamehash}{449912d0e815db2c8c359fc4ceba6032}
+      \strng{authornamehash}{449912d0e815db2c8c359fc4ceba6032}
+      \strng{authorfullhash}{449912d0e815db2c8c359fc4ceba6032}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biofluid Mechanics}
+      \field{title}{Mass transport and heat transfer in the microcirculation}
+      \field{year}{2022}
+      \field{pages}{331\bibrangedash 374}
+      \range{pages}{44}
+      \verb{doi}
+      \verb https://doi.org/10.1016/b978-0-12-818034-1.00008-6
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/topics/engineering/compartmental-modeling
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/topics/engineering/compartmental-modeling
+      \endverb
+    \endentry
+    \entry{hovorka}{article}{}
+      \name{author}{3}{}{%
+        {{hash=59693520b96de5d1f9558e3733e07727}{%
+           family={Rubenstein},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=90e2a9ad9a0fa5c71837be38fa7f63a2}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=db5c2bb16da7a3c752925b76fb3afe5c}{%
+           family={Frame},
+           familyi={F\bibinitperiod},
+           given={Mary\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{449912d0e815db2c8c359fc4ceba6032}
+      \strng{fullhash}{449912d0e815db2c8c359fc4ceba6032}
+      \strng{bibnamehash}{449912d0e815db2c8c359fc4ceba6032}
+      \strng{authorbibnamehash}{449912d0e815db2c8c359fc4ceba6032}
+      \strng{authornamehash}{449912d0e815db2c8c359fc4ceba6032}
+      \strng{authorfullhash}{449912d0e815db2c8c359fc4ceba6032}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biofluid Mechanics}
+      \field{title}{Mass transport and heat transfer in the microcirculation}
+      \field{year}{2022}
+      \field{pages}{331\bibrangedash 374}
+      \range{pages}{44}
+      \verb{doi}
+      \verb https://doi.org/10.1016/b978-0-12-818034-1.00008-6
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/topics/engineering/compartmental-modeling
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/topics/engineering/compartmental-modeling
+      \endverb
+    \endentry
+    \entry{paper4}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b75ace3da01dccd4d7c576d5317f7e87}{%
+           family={Mougiakakou},
+           familyi={M\bibinitperiod},
+           given={S.G.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6be3d53522a8af086ae50a563fa17ed8}{%
+           family={Prountzou},
+           familyi={P\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c27f0888ad66742f68080075f4621330}{%
+           family={Nikita},
+           familyi={N\bibinitperiod},
+           given={K.S.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3983399e66a45b52f66207d30b31597}
+      \strng{fullhash}{e3983399e66a45b52f66207d30b31597}
+      \strng{bibnamehash}{e3983399e66a45b52f66207d30b31597}
+      \strng{authorbibnamehash}{e3983399e66a45b52f66207d30b31597}
+      \strng{authornamehash}{e3983399e66a45b52f66207d30b31597}
+      \strng{authorfullhash}{e3983399e66a45b52f66207d30b31597}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2005 IEEE Engineering in Medicine and Biology 27th Annual Conference}
+      \field{title}{A Real Time Simulation Model of Glucose-Insulin Metabolism for Type 1 Diabetes Patients}
+      \field{year}{2005}
+      \verb{doi}
+      \verb https://doi.org/10.1109/iembs.2005.1616403
+      \endverb
+      \verb{urlraw}
+      \verb https://pubmed.ncbi.nlm.nih.gov/17282172/
+      \endverb
+      \verb{url}
+      \verb https://pubmed.ncbi.nlm.nih.gov/17282172/
+      \endverb
+    \endentry
+    \entry{paper6}{article}{}
+      \name{author}{1}{}{%
+        {{hash=eaa7d27e7fe98771ff5cb252e7ce939d}{%
+           family={Munoz-Organero},
+           familyi={M\bibinithyphendelim O\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{eaa7d27e7fe98771ff5cb252e7ce939d}
+      \strng{fullhash}{eaa7d27e7fe98771ff5cb252e7ce939d}
+      \strng{bibnamehash}{eaa7d27e7fe98771ff5cb252e7ce939d}
+      \strng{authorbibnamehash}{eaa7d27e7fe98771ff5cb252e7ce939d}
+      \strng{authornamehash}{eaa7d27e7fe98771ff5cb252e7ce939d}
+      \strng{authorfullhash}{eaa7d27e7fe98771ff5cb252e7ce939d}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{month}{7}
+      \field{number}{14}
+      \field{title}{Deep Physiological Model for Blood Glucose Prediction in T1DM Patients}
+      \field{volume}{20}
+      \field{year}{2020}
+      \field{pages}{3896}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.3390/s20143896
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7412558/
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7412558/
+      \endverb
+    \endentry
+    \entry{dinamo}{article}{}
+      \name{author}{6}{}{%
+        {{hash=257a6946500e944aaebce8f92a952068}{%
+           family={Dubosson},
+           familyi={D\bibinitperiod},
+           given={Fabien},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8d539c4377b24d2f7a412654c3616880}{%
+           family={Ranvier},
+           familyi={R\bibinitperiod},
+           given={Jean-Eudes},
+           giveni={J\bibinithyphendelim E\bibinitperiod}}}%
+        {{hash=cbae537bf8a32a3790887793faff305b}{%
+           family={Bromuri},
+           familyi={B\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=01d438922d0406fbab39b467eb9201d7}{%
+           family={Calbimonte},
+           familyi={C\bibinitperiod},
+           given={Jean-Paul},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=8eea9d8180dd85c6a2c42391d44af206}{%
+           family={Ruiz},
+           familyi={R\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8b14fb48d8d231792595c2b8af0b43bf}{%
+           family={Schumacher},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b70b00d2b8b3265c5eb6f91019548b17}
+      \strng{fullhash}{718d3981b8ccb1b7790cd2ebee9e559a}
+      \strng{bibnamehash}{718d3981b8ccb1b7790cd2ebee9e559a}
+      \strng{authorbibnamehash}{718d3981b8ccb1b7790cd2ebee9e559a}
+      \strng{authornamehash}{b70b00d2b8b3265c5eb6f91019548b17}
+      \strng{authorfullhash}{718d3981b8ccb1b7790cd2ebee9e559a}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Informatics in Medicine Unlocked}
+      \field{title}{The open D1NAMO dataset: A multi-modal dataset for research on non-invasive type 1 diabetes management}
+      \field{volume}{13}
+      \field{year}{2018}
+      \field{pages}{92\bibrangedash 100}
+      \range{pages}{9}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.imu.2018.09.003
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2352914818301059
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2352914818301059
+      \endverb
+    \endentry
+    \entry{paper8}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5dfc0029cef360158276b0922e0c5670}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Wenbo},
+           giveni={W\bibinitperiod}}}%
+        {{hash=5026663a877ef2b2bf7c27e813a39b24}{%
+           family={Tong},
+           familyi={T\bibinitperiod},
+           given={Meng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a5c0147ca4aa379c1f1a9544724dc64c}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{39d5311229fd3e847df8208590af9e58}
+      \strng{fullhash}{39d5311229fd3e847df8208590af9e58}
+      \strng{bibnamehash}{39d5311229fd3e847df8208590af9e58}
+      \strng{authorbibnamehash}{39d5311229fd3e847df8208590af9e58}
+      \strng{authornamehash}{39d5311229fd3e847df8208590af9e58}
+      \strng{authorfullhash}{39d5311229fd3e847df8208590af9e58}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Blood Glucose Prediction With VMD and LSTM Optimized by Improved Particle Swarm Optimization}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{217908\bibrangedash 217916}
+      \range{pages}{9}
+      \verb{doi}
+      \verb https://doi.org/10.1109/access.2020.3041355
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/9281120
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/9281120
+      \endverb
+    \endentry
+    \entry{cegaimage}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cd0cbeec8393545b3ea30ad4a73eabdd}{%
+           family={Benesch},
+           familyi={B\bibinitperiod},
+           given={Dr.\bibnamedelimi Carsten},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd0cbeec8393545b3ea30ad4a73eabdd}
+      \strng{fullhash}{cd0cbeec8393545b3ea30ad4a73eabdd}
+      \strng{bibnamehash}{cd0cbeec8393545b3ea30ad4a73eabdd}
+      \strng{authorbibnamehash}{cd0cbeec8393545b3ea30ad4a73eabdd}
+      \strng{authornamehash}{cd0cbeec8393545b3ea30ad4a73eabdd}
+      \strng{authorfullhash}{cd0cbeec8393545b3ea30ad4a73eabdd}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Profil.com}
+      \field{title}{Error Grid Analysis}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://blog.profil.com/blog/error-grid-analysis
+      \endverb
+      \verb{url}
+      \verb https://blog.profil.com/blog/error-grid-analysis
+      \endverb
+    \endentry
+    \entry{paper9}{article}{}
+      \name{author}{7}{}{%
+        {{hash=c5fa1e30985e90c1ba2c22eceafa6b67}{%
+           family={Aliberti},
+           familyi={A\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0a5c9bb99fbea94bde7156b37eb5a399}{%
+           family={Pupillo},
+           familyi={P\bibinitperiod},
+           given={Irene},
+           giveni={I\bibinitperiod}}}%
+        {{hash=366b69edc1290193081f7dcf665ce81f}{%
+           family={Terna},
+           familyi={T\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5bed14704cdb65a2b775fc02f917dc2b}{%
+           family={Macii},
+           familyi={M\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d213f0e7d8993b684be41bd47e6dd09e}{%
+           family={Di\bibnamedelima Cataldo},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Santa},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c2278040541c21246afeed31dff40fbf}{%
+           family={Patti},
+           familyi={P\bibinitperiod},
+           given={Edoardo},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2b8079dd35198587376c427f07fb60ee}{%
+           family={Acquaviva},
+           familyi={A\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4b057cad54ed2776bb3442af412f0e3}
+      \strng{fullhash}{067ecc2107991d36cc87fcf6589ed703}
+      \strng{bibnamehash}{067ecc2107991d36cc87fcf6589ed703}
+      \strng{authorbibnamehash}{067ecc2107991d36cc87fcf6589ed703}
+      \strng{authornamehash}{b4b057cad54ed2776bb3442af412f0e3}
+      \strng{authorfullhash}{067ecc2107991d36cc87fcf6589ed703}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{A Multi-Patient Data-Driven Approach to Blood Glucose Prediction}
+      \field{volume}{7}
+      \field{year}{2019}
+      \field{pages}{69311\bibrangedash 69325}
+      \range{pages}{15}
+      \verb{doi}
+      \verb https://doi.org/10.1109/access.2019.2919184
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8723121
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8723121
+      \endverb
+    \endentry
+    \entry{paper7}{book}{}
+      \name{author}{5}{}{%
+        {{hash=00ba76bb2bd33dc89a5c0a0cb43b898e}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Taiyu},
+           giveni={T\bibinitperiod}}}%
+        {{hash=97936e1c2b29a39474387e1dd7a8ec86}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Kezhi},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c8bbda187b0bf2a077335cda31242ad8}{%
+           family={Herrero},
+           familyi={H\bibinitperiod},
+           given={Pau},
+           giveni={P\bibinitperiod}}}%
+        {{hash=589d98c59eb05f3ec70b55ef350a2d7f}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jianwei},
+           giveni={J\bibinitperiod}}}%
+        {{hash=682685e144117d7db8b39486cc38949e}{%
+           family={Georgiou},
+           familyi={G\bibinitperiod},
+           given={Pantelis},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c0c441e6a1c43aada0a8f6d97c3a884}
+      \strng{fullhash}{42707cf7460b44e81d43122140c8991f}
+      \strng{bibnamehash}{42707cf7460b44e81d43122140c8991f}
+      \strng{authorbibnamehash}{42707cf7460b44e81d43122140c8991f}
+      \strng{authornamehash}{3c0c441e6a1c43aada0a8f6d97c3a884}
+      \strng{authorfullhash}{42707cf7460b44e81d43122140c8991f}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Deep Learning Algorithm For Personalized Blood Glucose Prediction}
+      \verb{urlraw}
+      \verb https://ceur-ws.org/Vol-2148/paper12.pdf
+      \endverb
+      \verb{url}
+      \verb https://ceur-ws.org/Vol-2148/paper12.pdf
+      \endverb
+    \endentry
+    \entry{ohio}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9e3bbc076d2c03f7db17e797172ffe1a}{%
+           family={R},
+           familyi={R\bibinitperiod},
+           given={Marling\bibnamedelima C;Bunescu},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CEUR Workshop Proc}%
+      }
+      \strng{namehash}{9e3bbc076d2c03f7db17e797172ffe1a}
+      \strng{fullhash}{9e3bbc076d2c03f7db17e797172ffe1a}
+      \strng{bibnamehash}{9e3bbc076d2c03f7db17e797172ffe1a}
+      \strng{authorbibnamehash}{9e3bbc076d2c03f7db17e797172ffe1a}
+      \strng{authornamehash}{9e3bbc076d2c03f7db17e797172ffe1a}
+      \strng{authorfullhash}{9e3bbc076d2c03f7db17e797172ffe1a}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CEUR workshop proceedings}
+      \field{title}{The OhioT1DM Dataset for Blood Glucose Level Prediction: Update 2020}
+      \field{volume}{2675}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://pubmed.ncbi.nlm.nih.gov/33584164/
+      \endverb
+      \verb{url}
+      \verb https://pubmed.ncbi.nlm.nih.gov/33584164/
+      \endverb
+    \endentry
+    \entry{whatiscnn}{article}{}
+      \name{author}{10}{}{%
+        {{hash=7ba5f3f51633b9ea61428ede65546835}{%
+           family={Alzubaidi},
+           familyi={A\bibinitperiod},
+           given={Laith},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9e634e39ca3d0570af8fb4bb054dbfbb}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jinglan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=aa0e6b4c6338c591aa8f264e4f63050b}{%
+           family={Humaidi},
+           familyi={H\bibinitperiod},
+           given={Amjad\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=33b7141e2374671472692e19ceb44c4e}{%
+           family={Al-Dujaili},
+           familyi={A\bibinithyphendelim D\bibinitperiod},
+           given={Ayad},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0f158de2e6d958dd5335e8a44c09321b}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2fbc3d640343f76a0db1760f6b14bf4a}{%
+           family={Al-Shamma},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Omran},
+           giveni={O\bibinitperiod}}}%
+        {{hash=a374a28c54d77e139ae4d273e4a970c1}{%
+           family={Santamaría},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=39988396e810a2918f00842f46c2eb43}{%
+           family={Fadhel},
+           familyi={F\bibinitperiod},
+           given={Mohammed\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c69aff305e1c1f0ec4bbd30897839fea}{%
+           family={Al-Amidie},
+           familyi={A\bibinithyphendelim A\bibinitperiod},
+           given={Muthana},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f727bd771fc42188f40b804cbc8567f6}{%
+           family={Farhan},
+           familyi={F\bibinitperiod},
+           given={Laith},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{0fef0ce3d8aef831f9c42675dfcd92b6}
+      \strng{fullhash}{9a07d432613b5f524f7d91dfd282000c}
+      \strng{bibnamehash}{9a07d432613b5f524f7d91dfd282000c}
+      \strng{authorbibnamehash}{9a07d432613b5f524f7d91dfd282000c}
+      \strng{authornamehash}{0fef0ce3d8aef831f9c42675dfcd92b6}
+      \strng{authorfullhash}{9a07d432613b5f524f7d91dfd282000c}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Big Data}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Review of deep learning: concepts, CNN architectures, challenges, applications, future directions}
+      \field{volume}{8}
+      \field{year}{2021}
+      \verb{doi}
+      \verb https://doi.org/10.1186/s40537-021-00444-8
+      \endverb
+      \verb{urlraw}
+      \verb https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00444-8
+      \endverb
+      \verb{url}
+      \verb https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00444-8
+      \endverb
+    \endentry
+    \entry{paper10}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5c786d9afb3cf178271120f1fd926d21}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ad1506e9f10da2cad4389eac16751647}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{04d8c391c878809e68ebe12e4cd4242f}
+      \strng{fullhash}{04d8c391c878809e68ebe12e4cd4242f}
+      \strng{bibnamehash}{04d8c391c878809e68ebe12e4cd4242f}
+      \strng{authorbibnamehash}{04d8c391c878809e68ebe12e4cd4242f}
+      \strng{authornamehash}{04d8c391c878809e68ebe12e4cd4242f}
+      \strng{authorfullhash}{04d8c391c878809e68ebe12e4cd4242f}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Sciences}
+      \field{month}{5}
+      \field{number}{9}
+      \field{title}{Application of Improved LightGBM Model in Blood Glucose Prediction}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{3227}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.3390/app10093227
+      \endverb
+    \endentry
+    \entry{lightgbm}{book}{}
+      \name{author}{8}{}{%
+        {{hash=dadd87e1dad07728ce408894042b277e}{%
+           family={Ke},
+           familyi={K\bibinitperiod},
+           given={Guolin},
+           giveni={G\bibinitperiod}}}%
+        {{hash=359e0be87f96079a68d0ebf5355da232}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Qi},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=d1cb1c25fa372c0b0885de8a27dc0222}{%
+           family={Finley},
+           familyi={F\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b5857cb363d37a3b1ff2c28da6586fc9}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Taifeng},
+           giveni={T\bibinitperiod}}}%
+        {{hash=06debc36f6b61a405e8f0da1c7ccd6ca}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a70fde7196864f8be0248eba2f7f29c8}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Weidong},
+           giveni={W\bibinitperiod}}}%
+        {{hash=162ccfc475d9d2bc1177357e4913f290}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Qiwei},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=716b89cbb7332599ebb33cc58a52f648}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Tie-Yan},
+           giveni={T\bibinithyphendelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f310c6fe235873814ad6bcc5d2c004e}
+      \strng{fullhash}{138b620984178bfaf960c59da39eb14f}
+      \strng{bibnamehash}{138b620984178bfaf960c59da39eb14f}
+      \strng{authorbibnamehash}{138b620984178bfaf960c59da39eb14f}
+      \strng{authornamehash}{3f310c6fe235873814ad6bcc5d2c004e}
+      \strng{authorfullhash}{138b620984178bfaf960c59da39eb14f}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{LightGBM: A Highly Efficient Gradient Boosting Decision Tree}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
