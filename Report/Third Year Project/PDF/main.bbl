@@ -1540,6 +1540,321 @@
       \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf
       \endverb
     \endentry
+    \entry{basalshort}{misc}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{journaltitle}{Diabetes UK}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin/types
+      \endverb
+      \verb{url}
+      \verb https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin/types
+      \endverb
+    \endentry
+    \entry{haiya}{article}{}
+      \name{author}{3}{}{%
+        {{hash=87a9934863b2e89166bce1607aee30c0}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Haiyan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1f630d0fdb874ce5c0f579dd3300c15f}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jiaxu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=256bcb887020179162debbd01e9d7e73}{%
+           family={kuang},
+           familyi={k\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{86bf5b899fc1f4bc0ed93e1ef191032b}
+      \strng{fullhash}{86bf5b899fc1f4bc0ed93e1ef191032b}
+      \strng{bibnamehash}{86bf5b899fc1f4bc0ed93e1ef191032b}
+      \strng{authorbibnamehash}{86bf5b899fc1f4bc0ed93e1ef191032b}
+      \strng{authornamehash}{86bf5b899fc1f4bc0ed93e1ef191032b}
+      \strng{authorfullhash}{86bf5b899fc1f4bc0ed93e1ef191032b}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematical Biosciences}
+      \field{month}{11}
+      \field{number}{1}
+      \field{title}{Mathematical modeling and qualitative analysis of insulin therapies}
+      \field{volume}{210}
+      \field{year}{2007}
+      \field{pages}{17\bibrangedash 33}
+      \range{pages}{17}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.mbs.2007.05.008
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0025556407001058
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0025556407001058
+      \endverb
+    \endentry
+    \entry{delayDe}{article}{}
+      \name{author}{2}{}{%
+        {{hash=7aee3771049d27f6794891c959e2e1ac}{%
+           family={Shampine},
+           familyi={S\bibinitperiod},
+           given={Larry\bibnamedelima F},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=5351a1d44c90633daafb81cabc2f2224}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={Skip},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {unknown}%
+      }
+      \strng{namehash}{15a4642a240877d8d4f406ad77ca1d2f}
+      \strng{fullhash}{15a4642a240877d8d4f406ad77ca1d2f}
+      \strng{bibnamehash}{15a4642a240877d8d4f406ad77ca1d2f}
+      \strng{authorbibnamehash}{15a4642a240877d8d4f406ad77ca1d2f}
+      \strng{authornamehash}{15a4642a240877d8d4f406ad77ca1d2f}
+      \strng{authorfullhash}{15a4642a240877d8d4f406ad77ca1d2f}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{month}{1}
+      \field{title}{Delay Differential Equations}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/228884162_Delay_Differential_Equations
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/228884162_Delay_Differential_Equations
+      \endverb
+    \endentry
+    \entry{savgol}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1a1b29e36ab42471d58b4ab9a91de09b}{%
+           family={Gallagher},
+           familyi={G\bibinitperiod},
+           given={Neal},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {unknown}%
+      }
+      \strng{namehash}{1a1b29e36ab42471d58b4ab9a91de09b}
+      \strng{fullhash}{1a1b29e36ab42471d58b4ab9a91de09b}
+      \strng{bibnamehash}{1a1b29e36ab42471d58b4ab9a91de09b}
+      \strng{authorbibnamehash}{1a1b29e36ab42471d58b4ab9a91de09b}
+      \strng{authornamehash}{1a1b29e36ab42471d58b4ab9a91de09b}
+      \strng{authorfullhash}{1a1b29e36ab42471d58b4ab9a91de09b}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{month}{1}
+      \field{title}{Savitzky-Golay Smoothing and Differentiation Filter}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/338518012_Savitzky-Golay_Smoothing_and_Differentiation_Filter
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/338518012_Savitzky-Golay_Smoothing_and_Differentiation_Filter
+      \endverb
+    \endentry
+    \entry{convolution}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1328d3ceef6add8461994fc364c664df}{%
+           family={Dumoulin},
+           familyi={D\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=6b5929470a8840e4c6f9b8836bd55286}{%
+           family={Visin},
+           familyi={V\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac3e7f97a270527500aed940113f1070}
+      \strng{fullhash}{ac3e7f97a270527500aed940113f1070}
+      \strng{bibnamehash}{ac3e7f97a270527500aed940113f1070}
+      \strng{authorbibnamehash}{ac3e7f97a270527500aed940113f1070}
+      \strng{authornamehash}{ac3e7f97a270527500aed940113f1070}
+      \strng{authorfullhash}{ac3e7f97a270527500aed940113f1070}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv.org}
+      \field{title}{A guide to convolution arithmetic for deep learning}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1603.07285
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1603.07285
+      \endverb
+    \endentry
+    \entry{minmax}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=57aec4f493ac4cc404b1fc6f57486d31}{%
+           family={Loukas},
+           familyi={L\bibinitperiod},
+           given={Serafeim},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Towards Data Science}%
+      }
+      \strng{namehash}{57aec4f493ac4cc404b1fc6f57486d31}
+      \strng{fullhash}{57aec4f493ac4cc404b1fc6f57486d31}
+      \strng{bibnamehash}{57aec4f493ac4cc404b1fc6f57486d31}
+      \strng{authorbibnamehash}{57aec4f493ac4cc404b1fc6f57486d31}
+      \strng{authornamehash}{57aec4f493ac4cc404b1fc6f57486d31}
+      \strng{authorfullhash}{57aec4f493ac4cc404b1fc6f57486d31}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medium}
+      \field{month}{5}
+      \field{title}{Everything you need to know about Min-Max normalization: A Python tutorial}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/everything-you-need-to-know-about-min-max-normalization-in-python-b79592732b79
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/everything-you-need-to-know-about-min-max-normalization-in-python-b79592732b79
+      \endverb
+    \endentry
+    \entry{tensorflow}{misc}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{journaltitle}{TensorFlow}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.tensorflow.org/
+      \endverb
+      \verb{url}
+      \verb https://www.tensorflow.org/
+      \endverb
+    \endentry
+    \entry{adam}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2d0255630df5c32329b4557dc1b5bf56}{%
+           family={Alom},
+           familyi={A\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {unknown}%
+      }
+      \strng{namehash}{2d0255630df5c32329b4557dc1b5bf56}
+      \strng{fullhash}{2d0255630df5c32329b4557dc1b5bf56}
+      \strng{bibnamehash}{2d0255630df5c32329b4557dc1b5bf56}
+      \strng{authorbibnamehash}{2d0255630df5c32329b4557dc1b5bf56}
+      \strng{authornamehash}{2d0255630df5c32329b4557dc1b5bf56}
+      \strng{authorfullhash}{2d0255630df5c32329b4557dc1b5bf56}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{month}{6}
+      \field{title}{Adam Optimization Algorithm}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/352497171_Adam_Optimization_Algorithm
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/352497171_Adam_Optimization_Algorithm
+      \endverb
+    \endentry
+    \entry{bilstm}{misc}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{journaltitle}{Paperswithcode.com}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://paperswithcode.com/method/bilstm
+      \endverb
+      \verb{url}
+      \verb https://paperswithcode.com/method/bilstm
+      \endverb
+    \endentry
+    \entry{cegcode}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=db673b5b3ada144f181d835fe50426d7}{%
+           family={kriventsov},
+           familyi={k\bibinitperiod}}}%
+      }
+      \strng{namehash}{db673b5b3ada144f181d835fe50426d7}
+      \strng{fullhash}{db673b5b3ada144f181d835fe50426d7}
+      \strng{bibnamehash}{db673b5b3ada144f181d835fe50426d7}
+      \strng{authorbibnamehash}{db673b5b3ada144f181d835fe50426d7}
+      \strng{authornamehash}{db673b5b3ada144f181d835fe50426d7}
+      \strng{authorfullhash}{db673b5b3ada144f181d835fe50426d7}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GitHub}
+      \field{title}{Clarke-and-Parkes-Error-Grids/error_grids.py at master · kriventsov/Clarke-and-Parkes-Error-Grids}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://github.com/kriventsov/Clarke-and-Parkes-Error-Grids/blob/master/error_grids.py
+      \endverb
+      \verb{url}
+      \verb https://github.com/kriventsov/Clarke-and-Parkes-Error-Grids/blob/master/error_grids.py
+      \endverb
+    \endentry
+    \entry{hyperband}{article}{}
+      \name{author}{3}{}{%
+        {{hash=1f8dc2db3fb2bdd7a51ade713872affb}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Lisha},
+           giveni={L\bibinitperiod}}}%
+        {{hash=240fa0e010cb30dc1e40c10157f58276}{%
+           family={Jamieson},
+           familyi={J\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7aef26bccf2dba53f4b3c49adfb2983e}{%
+           family={Rostamizadeh},
+           familyi={R\bibinitperiod},
+           given={Afshin},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{53beada048f2e242f7bedb212513c801}
+      \strng{fullhash}{53beada048f2e242f7bedb212513c801}
+      \strng{bibnamehash}{53beada048f2e242f7bedb212513c801}
+      \strng{authorbibnamehash}{53beada048f2e242f7bedb212513c801}
+      \strng{authornamehash}{53beada048f2e242f7bedb212513c801}
+      \strng{authorfullhash}{53beada048f2e242f7bedb212513c801}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{title}{Hyperband: A Novel Bandit-Based Approach to Hyperparameter Optimization}
+      \field{volume}{18}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 52}
+      \range{pages}{52}
+      \verb{urlraw}
+      \verb https://jmlr.org/papers/volume18/16-558/16-558.pdf
+      \endverb
+      \verb{url}
+      \verb https://jmlr.org/papers/volume18/16-558/16-558.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

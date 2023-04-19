@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2023.4.10)  14 APR 2023 13:28
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2023.4.10)  18 APR 2023 21:04
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -916,61 +916,70 @@ Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
 \c@subfigure=\count313
 \c@subtable=\count314
 )
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count315
+\FV@InFile=\read5
+\FV@TabBox=\box62
+\c@FancyVerbLine=\count316
+\FV@StepNumber=\count317
+\FV@OutFile=\write6
+)
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count315
+\etb@tempcnta=\count318
 )
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count316
+\lrq@indent=\count319
 
 (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count317
-\c@listtotal=\count318
-\c@listcount=\count319
-\c@liststart=\count320
-\c@liststop=\count321
-\c@citecount=\count322
-\c@citetotal=\count323
-\c@multicitecount=\count324
-\c@multicitetotal=\count325
-\c@instcount=\count326
-\c@maxnames=\count327
-\c@minnames=\count328
-\c@maxitems=\count329
-\c@minitems=\count330
-\c@citecounter=\count331
-\c@maxcitecounter=\count332
-\c@savedcitecounter=\count333
-\c@uniquelist=\count334
-\c@uniquename=\count335
-\c@refsection=\count336
-\c@refsegment=\count337
-\c@maxextratitle=\count338
-\c@maxextratitleyear=\count339
-\c@maxextraname=\count340
-\c@maxextradate=\count341
-\c@maxextraalpha=\count342
-\c@abbrvpenalty=\count343
-\c@highnamepenalty=\count344
-\c@lownamepenalty=\count345
-\c@maxparens=\count346
-\c@parenlevel=\count347
-\blx@tempcnta=\count348
-\blx@tempcntb=\count349
-\blx@tempcntc=\count350
-\blx@maxsection=\count351
-\blx@maxsegment@0=\count352
-\blx@notetype=\count353
-\blx@parenlevel@text=\count354
-\blx@parenlevel@foot=\count355
-\blx@sectionciteorder@0=\count356
-\blx@entrysetcounter=\count357
+\c@tabx@nest=\count320
+\c@listtotal=\count321
+\c@listcount=\count322
+\c@liststart=\count323
+\c@liststop=\count324
+\c@citecount=\count325
+\c@citetotal=\count326
+\c@multicitecount=\count327
+\c@multicitetotal=\count328
+\c@instcount=\count329
+\c@maxnames=\count330
+\c@minnames=\count331
+\c@maxitems=\count332
+\c@minitems=\count333
+\c@citecounter=\count334
+\c@maxcitecounter=\count335
+\c@savedcitecounter=\count336
+\c@uniquelist=\count337
+\c@uniquename=\count338
+\c@refsection=\count339
+\c@refsegment=\count340
+\c@maxextratitle=\count341
+\c@maxextratitleyear=\count342
+\c@maxextraname=\count343
+\c@maxextradate=\count344
+\c@maxextraalpha=\count345
+\c@abbrvpenalty=\count346
+\c@highnamepenalty=\count347
+\c@lownamepenalty=\count348
+\c@maxparens=\count349
+\c@parenlevel=\count350
+\blx@tempcnta=\count351
+\blx@tempcntb=\count352
+\blx@tempcntc=\count353
+\blx@maxsection=\count354
+\blx@maxsegment@0=\count355
+\blx@notetype=\count356
+\blx@parenlevel@text=\count357
+\blx@parenlevel@foot=\count358
+\blx@sectionciteorder@0=\count359
+\blx@entrysetcounter=\count360
 \labelnumberwidth=\skip114
 \labelalphawidth=\skip115
 \biblabelsep=\skip116
@@ -979,12 +988,12 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \bibinitsep=\skip119
 \bibparsep=\skip120
 \bibhang=\skip121
-\blx@bcfin=\read5
-\blx@bcfout=\write6
+\blx@bcfin=\read6
+\blx@bcfout=\write7
 \blx@langwohyphens=\language2
-\c@mincomprange=\count358
-\c@maxcomprange=\count359
-\c@mincompwidth=\count360
+\c@mincomprange=\count361
+\c@maxcomprange=\count362
+\c@mincompwidth=\count363
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -995,74 +1004,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count361
-\c@savedafterword=\count362
-\c@annotator=\count363
-\c@savedannotator=\count364
-\c@author=\count365
-\c@savedauthor=\count366
-\c@bookauthor=\count367
-\c@savedbookauthor=\count368
-\c@commentator=\count369
-\c@savedcommentator=\count370
-\c@editor=\count371
-\c@savededitor=\count372
-\c@editora=\count373
-\c@savededitora=\count374
-\c@editorb=\count375
-\c@savededitorb=\count376
-\c@editorc=\count377
-\c@savededitorc=\count378
-\c@foreword=\count379
-\c@savedforeword=\count380
-\c@holder=\count381
-\c@savedholder=\count382
-\c@introduction=\count383
-\c@savedintroduction=\count384
-\c@namea=\count385
-\c@savednamea=\count386
-\c@nameb=\count387
-\c@savednameb=\count388
-\c@namec=\count389
-\c@savednamec=\count390
-\c@translator=\count391
-\c@savedtranslator=\count392
-\c@shortauthor=\count393
-\c@savedshortauthor=\count394
-\c@shorteditor=\count395
-\c@savedshorteditor=\count396
-\c@labelname=\count397
-\c@savedlabelname=\count398
-\c@institution=\count399
-\c@savedinstitution=\count400
-\c@lista=\count401
-\c@savedlista=\count402
-\c@listb=\count403
-\c@savedlistb=\count404
-\c@listc=\count405
-\c@savedlistc=\count406
-\c@listd=\count407
-\c@savedlistd=\count408
-\c@liste=\count409
-\c@savedliste=\count410
-\c@listf=\count411
-\c@savedlistf=\count412
-\c@location=\count413
-\c@savedlocation=\count414
-\c@organization=\count415
-\c@savedorganization=\count416
-\c@origlocation=\count417
-\c@savedoriglocation=\count418
-\c@origpublisher=\count419
-\c@savedorigpublisher=\count420
-\c@publisher=\count421
-\c@savedpublisher=\count422
-\c@language=\count423
-\c@savedlanguage=\count424
-\c@origlanguage=\count425
-\c@savedoriglanguage=\count426
-\c@pageref=\count427
-\c@savedpageref=\count428
+\c@afterword=\count364
+\c@savedafterword=\count365
+\c@annotator=\count366
+\c@savedannotator=\count367
+\c@author=\count368
+\c@savedauthor=\count369
+\c@bookauthor=\count370
+\c@savedbookauthor=\count371
+\c@commentator=\count372
+\c@savedcommentator=\count373
+\c@editor=\count374
+\c@savededitor=\count375
+\c@editora=\count376
+\c@savededitora=\count377
+\c@editorb=\count378
+\c@savededitorb=\count379
+\c@editorc=\count380
+\c@savededitorc=\count381
+\c@foreword=\count382
+\c@savedforeword=\count383
+\c@holder=\count384
+\c@savedholder=\count385
+\c@introduction=\count386
+\c@savedintroduction=\count387
+\c@namea=\count388
+\c@savednamea=\count389
+\c@nameb=\count390
+\c@savednameb=\count391
+\c@namec=\count392
+\c@savednamec=\count393
+\c@translator=\count394
+\c@savedtranslator=\count395
+\c@shortauthor=\count396
+\c@savedshortauthor=\count397
+\c@shorteditor=\count398
+\c@savedshorteditor=\count399
+\c@labelname=\count400
+\c@savedlabelname=\count401
+\c@institution=\count402
+\c@savedinstitution=\count403
+\c@lista=\count404
+\c@savedlista=\count405
+\c@listb=\count406
+\c@savedlistb=\count407
+\c@listc=\count408
+\c@savedlistc=\count409
+\c@listd=\count410
+\c@savedlistd=\count411
+\c@liste=\count412
+\c@savedliste=\count413
+\c@listf=\count414
+\c@savedlistf=\count415
+\c@location=\count416
+\c@savedlocation=\count417
+\c@organization=\count418
+\c@savedorganization=\count419
+\c@origlocation=\count420
+\c@savedoriglocation=\count421
+\c@origpublisher=\count422
+\c@savedorigpublisher=\count423
+\c@publisher=\count424
+\c@savedpublisher=\count425
+\c@language=\count426
+\c@savedlanguage=\count427
+\c@origlanguage=\count428
+\c@savedoriglanguage=\count429
+\c@pageref=\count430
+\c@savedpageref=\count431
 \shorthandwidth=\skip122
 \shortjournalwidth=\skip123
 \shortserieswidth=\skip124
@@ -1092,19 +1101,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count429
-\c@textcitetotal=\count430
-\c@textcitemaxnames=\count431
-\c@biburlbigbreakpenalty=\count432
-\c@biburlbreakpenalty=\count433
-\c@biburlnumpenalty=\count434
-\c@biburlucpenalty=\count435
-\c@biburllcpenalty=\count436
+\c@textcitecount=\count432
+\c@textcitetotal=\count433
+\c@textcitemaxnames=\count434
+\c@biburlbigbreakpenalty=\count435
+\c@biburlbreakpenalty=\count436
+\c@biburlnumpenalty=\count437
+\c@biburlucpenalty=\count438
+\c@biburllcpenalty=\count439
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count437
+\c@smartand=\count440
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
@@ -1126,8 +1135,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count438
-\c@bbx:relatedtotal=\count439
+\c@bbx:relatedcount=\count441
+\c@bbx:relatedtotal=\count442
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
@@ -1139,8 +1148,8 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count440
-\c@cbx@tempcntb=\count441
+\c@cbx@tempcnta=\count443
+\c@cbx@tempcntb=\count444
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1162,8 +1171,8 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-\@quotelevel=\count442
-\@quotereset=\count443
+\@quotelevel=\count445
+\@quotereset=\count446
 
 (./PDF/main.aux)
 \openout1 = main.aux
@@ -1197,16 +1206,16 @@ LaTeX Font Info:    ... okay on input line 89.
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count444
+\scratchcounter=\count447
 \scratchdimen=\dimen290
-\scratchbox=\box62
-\nofMPsegments=\count445
-\nofMParguments=\count446
+\scratchbox=\box63
+\nofMPsegments=\count448
+\nofMParguments=\count449
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count447
+\MPscratchCnt=\count450
 \MPscratchDim=\dimen291
-\MPnumerator=\count448
-\makeMPintoPDFobject=\count449
+\MPnumerator=\count451
+\makeMPintoPDFobject=\count452
 \everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1225,7 +1234,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
-\AtBeginShipoutBox=\box63
+\AtBeginShipoutBox=\box64
 Package hyperref Info: Link coloring OFF on input line 89.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1237,7 +1246,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count450
+\c@section@level=\count453
 )
 LaTeX Info: Redefining \ref on input line 89.
 LaTeX Info: Redefining \pageref on input line 89.
@@ -1357,7 +1366,7 @@ Package biblatex Info: LuaTeX detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 
-\openout6 = main.bcf
+\openout7 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 
@@ -1383,9 +1392,9 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2])
-\tf@toc=\write7
+\tf@toc=\write8
 
-\openout7 = main.toc
+\openout8 = main.toc
  [3] [4
 
 
@@ -1400,19 +1409,19 @@ File: images/glucometer.jpg Graphic file (type jpg)
 Package luatex.def Info: images/glucometer.jpg  used on input line 152.
 (luatex.def)             Requested size: 241.84843pt x 170.11397pt.
  [7]
-<images/CGMPump.png, id=158, 693.59125pt x 461.725pt>
+<images/CGMPump.png, id=160, 693.59125pt x 461.725pt>
 File: images/CGMPump.png Graphic file (type png)
 <use images/CGMPump.png>
 Package luatex.def Info: images/CGMPump.png  used on input line 160.
 (luatex.def)             Requested size: 241.84843pt x 161.00027pt.
  [8<./images/glucometer.jpg><./images/CGMPump.png>]
-<images/basicNN.png, id=173, 803.0pt x 403.5075pt>
+<images/basicNN.png, id=175, 803.0pt x 403.5075pt>
 File: images/basicNN.png Graphic file (type png)
 <use images/basicNN.png>
 Package luatex.def Info: images/basicNN.png  used on input line 175.
 (luatex.def)             Requested size: 241.84843pt x 121.52727pt.
  [9]
-<images/gradientdescent.png, id=184, 756.8275pt x 469.755pt>
+<images/gradientdescent.png, id=186, 756.8275pt x 469.755pt>
 File: images/gradientdescent.png Graphic file (type png)
 <use images/gradientdescent.png>
 Package luatex.def Info: images/gradientdescent.png  used on input line 183.
@@ -1423,13 +1432,13 @@ File: images/basicRNN.png Graphic file (type png)
 <use images/basicRNN.png>
 Package luatex.def Info: images/basicRNN.png  used on input line 205.
 (luatex.def)             Requested size: 241.84843pt x 63.54375pt.
-<images/basicLSTM.png, id=222, 602.25pt x 268.00125pt>
+ [12]
+<images/basicLSTM.png, id=231, 602.25pt x 268.00125pt>
 File: images/basicLSTM.png Graphic file (type png)
 <use images/basicLSTM.png>
 Package luatex.def Info: images/basicLSTM.png  used on input line 213.
 (luatex.def)             Requested size: 241.84843pt x 107.62389pt.
- [12<./images/basicRNN.png>]
-[13<./images/basicLSTM.png>] [14] [15]
+ [13<./images/basicRNN.png><./images/basicLSTM.png>] [14] [15]
 <images/cega.png, id=277, 521.95pt x 273.02pt>
 File: images/cega.png Graphic file (type png)
 <use images/cega.png>
@@ -1448,16 +1457,139 @@ File: images/codeflow.png Graphic file (type png)
 Package luatex.def Info: images/codeflow.png  used on input line 260.
 (luatex.def)             Requested size: 483.69687pt x 132.74069pt.
  [18<./images/codeflow.png>] [19]
-<images/XMlFile.png, id=320, 947.54pt x 431.6125pt>
+<images/XMlFile.png, id=321, 947.54pt x 431.6125pt>
 File: images/XMlFile.png Graphic file (type png)
 <use images/XMlFile.png>
 Package luatex.def Info: images/XMlFile.png  used on input line 312.
-(luatex.def)             Requested size: 241.84843pt x 110.1618pt.
- [20<./images/XMlFile.png>] [21] [22]
+(luatex.def)             Requested size: 169.29684pt x 77.11392pt.
+<images/InsulinXML.png, id=322, 1493.58pt x 453.695pt>
+File: images/InsulinXML.png Graphic file (type png)
+<use images/InsulinXML.png>
+Package luatex.def Info: images/InsulinXML.png  used on input line 313.
+(luatex.def)             Requested size: 241.84843pt x 73.46495pt.
+ [20<./images/XMlFile.png><./images/InsulinXML.png>]
+<images/CarbIntakeDE.png, id=336, 772.8875pt x 222.8325pt>
+File: images/CarbIntakeDE.png Graphic file (type png)
+<use images/CarbIntakeDE.png>
+Package luatex.def Info: images/CarbIntakeDE.png  used on input line 332.
+(luatex.def)             Requested size: 266.03474pt x 76.70049pt.
+<images/InsulinDE.png, id=337, 1011.78pt x 269.005pt>
+File: images/InsulinDE.png Graphic file (type png)
+<use images/InsulinDE.png>
+Package luatex.def Info: images/InsulinDE.png  used on input line 333.
+(luatex.def)             Requested size: 290.22107pt x 77.16388pt.
+ [21<./images/CarbIntakeDE.png><./images/InsulinDE.png>]
+<images/InsulinSM.png, id=355, 737.154pt x 380.1402pt>
+File: images/InsulinSM.png Graphic file (type png)
+<use images/InsulinSM.png>
+Package luatex.def Info: images/InsulinSM.png  used on input line 346.
+(luatex.def)             Requested size: 362.77264pt x 187.08238pt.
+<images/InsulinLG.png, id=356, 721.2546pt x 380.1402pt>
+File: images/InsulinLG.png Graphic file (type png)
+<use images/InsulinLG.png>
+Package luatex.def Info: images/InsulinLG.png  used on input line 356.
+(luatex.def)             Requested size: 362.77264pt x 191.20071pt.
+ [22<./images/InsulinSM.png><./images/InsulinLG.png>]
+<images/InsulinDB.png, id=365, 715.473pt x 380.1402pt>
+File: images/InsulinDB.png Graphic file (type png)
+<use images/InsulinDB.png>
+Package luatex.def Info: images/InsulinDB.png  used on input line 366.
+(luatex.def)             Requested size: 362.77264pt x 192.74364pt.
+<images/CarbsSM.png, id=366, 714.7503pt x 380.1402pt>
+File: images/CarbsSM.png Graphic file (type png)
+<use images/CarbsSM.png>
+Package luatex.def Info: images/CarbsSM.png  used on input line 381.
+(luatex.def)             Requested size: 217.66211pt x 115.76567pt.
+<images/CarbsLG.png, id=367, 727.0362pt x 380.1402pt>
+File: images/CarbsLG.png Graphic file (type png)
+<use images/CarbsLG.png>
+Package luatex.def Info: images/CarbsLG.png  used on input line 382.
+(luatex.def)             Requested size: 217.66211pt x 113.80511pt.
+ [23<./images/InsulinDB.png><./images/CarbsSM.png><./images/CarbsLG.png>]
+<images/BasalLG.png, id=379, 724.1454pt x 380.1402pt>
+File: images/BasalLG.png Graphic file (type png)
+<use images/BasalLG.png>
+Package luatex.def Info: images/BasalLG.png  used on input line 396.
+(luatex.def)             Requested size: 362.77264pt x 190.44084pt.
+ [24<./images/BasalLG.png>]
+<images/filtered.png, id=391, 727.0362pt x 383.031pt>
+File: images/filtered.png Graphic file (type png)
+<use images/filtered.png>
+Package luatex.def Info: images/filtered.png  used on input line 417.
+(luatex.def)             Requested size: 362.77264pt x 191.12343pt.
+ [25<./images/filtered.png>]
+<images/UnNormed.png, id=403, 845.1575pt x 485.815pt>
+File: images/UnNormed.png Graphic file (type png)
+<use images/UnNormed.png>
+Package luatex.def Info: images/UnNormed.png  used on input line 438.
+(luatex.def)             Requested size: 217.66211pt x 125.11543pt.
+<images/Normed.png, id=404, 847.165pt x 479.7925pt>
+File: images/Normed.png Graphic file (type png)
+<use images/Normed.png>
+Package luatex.def Info: images/Normed.png  used on input line 439.
+(luatex.def)             Requested size: 217.66211pt x 123.27158pt.
+<images/InsulinWindow.png, id=405, 727.0362pt x 380.1402pt>
+File: images/InsulinWindow.png Graphic file (type png)
+<use images/InsulinWindow.png>
+Package luatex.def Info: images/InsulinWindow.png  used on input line 458.
+(luatex.def)             Requested size: 362.77264pt x 189.68098pt.
+ [26<./images/UnNormed.png><./images/Normed.png>]
+<images/InsulinSlices.png, id=413, 737.154pt x 380.1402pt>
+File: images/InsulinSlices.png Graphic file (type png)
+<use images/InsulinSlices.png>
+Package luatex.def Info: images/InsulinSlices.png  used on input line 469.
+(luatex.def)             Requested size: 362.77264pt x 187.08238pt.
+ [27<./images/InsulinWindow.png><./images/InsulinSlices.png>]
+<images/linearbase.png, id=426, 727.0362pt x 380.1402pt>
+File: images/linearbase.png Graphic file (type png)
+<use images/linearbase.png>
+Package luatex.def Info: images/linearbase.png  used on input line 488.
+(luatex.def)             Requested size: 362.77264pt x 189.68098pt.
+
+Overfull \hbox (0.32266pt too wide) in paragraph at lines 496--497
+\TU/Calibri.ttf(0)/m/n/12 The set of ap-proaches be-ing ex-plored in this proje
+ct all use the ba-sis on an LSTM RNN model, which 
+ []
+
+
+Overfull \hbox (27.76077pt too wide) in paragraph at lines 496--497
+\TU/Calibri.ttf(0)/m/n/12 was ex-plained in chap-ter 2.5.1 of the lit-er-a-ture
+ re-view. Us-ing [], 
+ []
+
+<images/BasicLSTM.png, id=427, 240.9pt x 353.32pt>
+File: images/BasicLSTM.png Graphic file (type png)
+<use images/BasicLSTM.png>
+Package luatex.def Info: images/BasicLSTM.png  used on input line 501.
+(luatex.def)             Requested size: 120.92421pt x 177.35503pt.
+[28<./images/linearbase.png>] [29<./images/BasicLSTM.png>]
+<images/BiLSTM.png, id=444, 691.58376pt x 430.60875pt>
+File: images/BiLSTM.png Graphic file (type png)
+<use images/BiLSTM.png>
+Package luatex.def Info: images/BiLSTM.png  used on input line 526.
+(luatex.def)             Requested size: 241.84843pt x 150.5839pt.
+<images/BiDiagram.png, id=447, 392.46625pt x 353.32pt>
+File: images/BiDiagram.png Graphic file (type png)
+<use images/BiDiagram.png>
+Package luatex.def Info: images/BiDiagram.png  used on input line 537.
+(luatex.def)             Requested size: 120.92421pt x 108.85956pt.
+ [30<./images/BiLSTM.png><./images/BiDiagram.png>]
+<images/multiIn.png, id=460, 573.14125pt x 282.05376pt>
+File: images/multiIn.png Graphic file (type png)
+<use images/multiIn.png>
+Package luatex.def Info: images/multiIn.png  used on input line 550.
+(luatex.def)             Requested size: 217.66211pt x 107.11697pt.
+
+Overfull \hbox (263.85263pt too wide) in paragraph at lines 562--563
+[]\TU/Calibri.ttf(0)/m/n/12 The im-ple-men-ta-tion of RMSE is sim-ple as ten-so
+r-flow pro-vides a pre-made im-ple-men-ta-tion in []. 
+ []
+
+[31<./images/multiIn.png>] [32] [33] [34]
 ! Misplaced alignment tab character &.
 <argument> Diabetes Technology &
                       Therapeutics
-l.360 ...graphy[title={References},heading=bibintoc]
+l.619 ...graphy[title={References},heading=bibintoc]
                                                    % a single list of refere...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1466,48 +1598,98 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[23]
-Overfull \hbox (2.30899pt too wide) in paragraph at lines 360--360
+[35]
+Overfull \hbox (2.30899pt too wide) in paragraph at lines 619--619
 []\TU/Calibri.ttf(0)/m/n/12 ——, ``Mass trans-port and heat trans-fer in the
  mi-cro-cir-cu-la-tion,'' \TU/Calibri.ttf(0)/m/it/12 Biofluid Me-chan-ics\TU/Ca
 libri.ttf(0)/m/n/12 , pp. 331– 
  []
 
-[24] [25] [26
+[36] [37]
+Overfull \hbox (8.75613pt too wide) in paragraph at lines 619--619
+[]\TU/Calibri.ttf(0)/m/n/12 M. Alom, ``Adam op-ti-miza-tion al-go-rithm,'' \TU/
+Calibri.ttf(0)/m/it/12 Re-search-Gate\TU/Calibri.ttf(0)/m/n/12 , Jun. 2021. [On
+-line]. Avail-able: []$\TU/lmtt/m/n/12 https : 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.619 ...graphy[title={References},heading=bibintoc]
+                                                   % a single list of refere...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\MakeLowercase  ... {\lowercase {#1}}\reserved@a }
+                                                  
+l.619 ...graphy[title={References},heading=bibintoc]
+                                                   % a single list of refere...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.619 ...graphy[title={References},heading=bibintoc]
+                                                   % a single list of refere...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.619 ...graphy[title={References},heading=bibintoc]
+                                                   % a single list of refere...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[38] [39
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 377.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 377.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 636.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 636.
  (./PDF/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 377.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 377.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 636.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 636.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 377.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 636.
 )
 
 Here is how much of LuaTeX's memory you used:
- 34494 strings out of 481365
+ 35176 strings out of 481365
  100000,1648299 words of node,token memory allocated
- 1305 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 53 attribute, 124 glue_spe
-c, 53 attribute_list, 2 write, 45 pdf_action nodes
-   avail lists: 1:3,2:917,3:430,4:38,5:977,6:91,7:6831,8:175,9:251,10:14,11:464
- 50247 multiletter control sequences out of 65536+600000
+ 1397 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 64 attribute, 124 glue_spe
+c, 64 attribute_list, 2 write, 53 pdf_action nodes
+   avail lists: 1:3,2:926,3:430,4:40,5:797,6:104,7:5977,8:175,9:251,10:17,11:371
+
+ 50749 multiletter control sequences out of 65536+600000
  60 fonts using 9114683 bytes
  52i,8n,82p,2403b,2690s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf><./fonts/Calibri
-Italic.ttf><./fonts/Calibri.ttf><./fonts/CalibriBold.ttf></usr/share/texlive/tex
+<./fonts/CalibriItalic.ttf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-r
+egular.otf><./fonts/Calibri.ttf><./fonts/CalibriBold.ttf></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb>
-Output written on main.pdf (26 pages, 935938 bytes).
+type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb>
+Output written on main.pdf (39 pages, 1951931 bytes).
 
-PDF statistics: 688 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 131072)
+PDF statistics: 885 PDF objects out of 1000 (max. 8388607)
+ 176 named destinations out of 1000 (max. 131072)
  335 words of extra memory for PDF output out of 10000 (max. 100000000)
 
