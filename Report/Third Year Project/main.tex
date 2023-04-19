@@ -103,7 +103,11 @@
 %%%%%%%%%%%%%%%%%% LISTS OF CONTENT %%%%%%%%%%%%%%%%%%
 \uomtoc% other lists are not required, but can include \uomlof and \uomlot if really want to
 
-
+%%%%%%%%%%%%%%%%%% ACKNOWLEDGEMENTS %%%%%%%%%%%%%%%%%%
+\begin{uomacknowledgements}
+  I would like to thank my tutor Paul Nutter for all of his knowledge and advice throughout the duration of this project and Simon Harper for granting me access to the OhioT1DM dataset.
+\end{uomacknowledgements}
+  
 %%%%%%%%%%%%%%%%%% ABSTRACT %%%%%%%%%%%%%%%%%%
 \begin{abstract} % put abstract here. Limit is 1 page.
   This is abstract text. 
@@ -420,7 +424,7 @@
               }
             \end{figure}
 
-            When experimenting with the trained models, the performance is compared on both filtered and unfiltered data, so the impacts of this filtering technique can be viewed.
+            When experimenting with the trained models, the performance is compared on both filtered and unfiltered data, so the impacts of this filtering technique can be viewed. It is important to note that only the training data is filtered, and all predictions are made on the original testing data, to ensure we don't skew the results.
 
           \subsubsection{Normalisation}
 
@@ -559,7 +563,7 @@
 
       To measure the performance of the models, two main metrics will be used - the RMSE of the predictions, and CEG analysis on the predictions.
 
-      The implementation of RMSE is simple as tensorflow provides a pre-made implementation in \Verb+tensorflow.keras.metrics.RootMeanSquaredError()+. However, when using data that has been normalised with min-max scaling, it is not as trivial. The numbers in the normalised data all range between 0 and 1, so finding the RMSE of predictions in this range is not informative at all as to the actual performance of the model - all error values will be tiny. Instead, the scale used to normalised the data is kept track of when normalising, and the inverse transformation is applied to both the actual and predicted value from the normalised data before calculating the RMSE value. This is done by writing a custom metric in tensorflow, and passing this metric to the model to be trained.
+      The implementation of RMSE is simple as tensorflow provides a ready-made implementation in \Verb+tensorflow.keras.metrics.RootMeanSquaredError()+. However, when using data that has been normalised with min-max scaling, it is not as trivial. The numbers in the normalised data all range between 0 and 1, so finding the RMSE of predictions in this range is not informative at all as to the actual performance of the model - all error values will be tiny. Instead, the scale used to normalised the data is kept track of when normalising, and the inverse transformation is applied to both the actual and predicted value from the normalised data before calculating the RMSE value. This is done by writing a custom metric in tensorflow, and passing this metric to the model to be trained.
       
       To calculate CEG accuracies, an implementation of the CEG, based on \cite{cegcode}, is written, which returns the percentage of prediction points that occur in each of the zones of the grid. 
 
@@ -590,22 +594,259 @@
       After all of the experimentation is done, a general discussion of the results over all 3 separate sections of the experimentation will also take place.
 
 	\subsection{Detail}
-        Show different metrics and graphs e.g. table of RMSE across different time spans for different models, plots of metrics vs hyperparameter settings / regularised vs not regularised etc.
     
+    \subsection{Baseline Performance}
+
+      To give a baseline to test model performance against, we first test the linear baseline on all of the prediction ranges generated and record the RMSE. All RMSE values are measured in mg/dL.
+
+      \begin{table}[H]
+        \centering
+        \caption{A table showing the RMSE performance of the linear baseline model}
+        \begin{tabular}{|*{9}{c|}} 
+          \hline
+          \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
+          15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
+          13.05&20.78 &33.96 &12.75&22.06 &36.07 &11.44 &19.46 &32.21 \\ \hline
+        \end{tabular}
+      \end{table}
+
+      From the better accuracy on patient 588 in this table, we can deduce that the data of patient 588 has much more gradual changes in BG levels, as these gradual changes are the ones that the baseline will predict more accurately on.
+
+    \subsubsection{Optimisation}
+
+      When optimising with hyperband tuning, different optimal parameters were found for each of the different prediction horizons. Over a 15 minute horizon, 40 training epochs a 0.001 learning rate and 288 units in the LSTM layer were used. For a 30 minute PH, 36 training epochs, 224 units and 0.001 learning rate were found as optimal. Finally, for the 60 min PH, 23 training epochs, 352 units and 0.001 lr were found to be the optimal settings. These model settings were carried over for all of the patients, but the hyperband tuning was completed on the data of patient 563.
+
     \subsubsection{Basic LSTM vs Residual LSTM}
+      
+      The difference between the strategy of making residual predictions versus straight predictions was first experimented with. We train a model with prediction ranges using 20 minutes of past data and a PH of 15 mins, 30 mins and 60 mins. Both data smoothed by Savitzky-Golay filtering and unsmoothed data are used. The RMSE between predicted and actual data is recorded and the results can be seen in the tables below. Each model was trained 3 times, with the average RMSE performance being recorded.
+
+      \begin{table}[H]
+        \centering
+        \caption{A table showing the RMSE performance of the basic LSTM model}
+        \begin{tabular}{|*{9}{c|}} 
+          \hline
+          \multicolumn{9}{|c|}{Unfiltered Data} \\ \hline
+          \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
+          15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
+          12.60&18.95 &30.56 &10.74 &17.95 &29.72 &11.11 &20.63 &33.20 \\ \hline
+        \end{tabular}
+        \begin{tabular}{|*{9}{c|}} 
+          \hline
+          \multicolumn{9}{|c|}{Filtered Data} \\ \hline
+          \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
+          15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
+          14.62 &19.98 &30.81 &10.77 &17.58 &31.21 &12.39 &19.56 &32.88 \\ \hline
+        \end{tabular}
+      \end{table}
+
+      \begin{table}[H]
+        \centering
+        \caption{A table showing the RMSE performance of the residual LSTM model}
+        \begin{tabular}{|*{9}{c|}} 
+          \hline
+          \multicolumn{9}{|c|}{Unfiltered Data} \\ \hline
+          \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
+          15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
+          14.18&20.67 &32.84 &11.87 &18.61 & 31.28&13.23 &21.09 &34.65 \\ \hline
+        \end{tabular}
+        \begin{tabular}{|*{9}{c|}} 
+          \hline
+          \multicolumn{9}{|c|}{Filtered Data} \\ \hline
+          \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
+          15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
+          14.36 &21.09 &31.58 &11.47 &18.01 &31.49 &13.31 &20.35 &33.92 \\ \hline
+        \end{tabular}
+      \end{table}
+
+      What is made immediately obvious by these tables, is that the basic LSTM performs noticeably better than the residual LSTM in making predictions. This could be due to the fact that sometimes the change between the last value and value to be predicted is large, which affects the residual models ability to converge on an accurate setting of weights.
+
+      The performance of the models on the flitered data is much harder to judge, with the filtered data sometimes performing better and sometimes performing worse. What is interesting to note is that the training error was lower in all cases when using the filtered data. This shows that the filtering technique did work, as the model was able to fit better to the data which shows that the noise was reduced. However, perhaps the smoothing was too strong and would have been better done with a lower window size as clearly the models sometimes also overfit on the training data which explains the fact that sometimes the performance is worse. 
+
+
+      \begin{figure}[H]
+        \centering
+
+        \includegraphics[width=0.65\textwidth]{images/Basic305.png}
+        \includegraphics[width=0.65\textwidth]{images/Filt305.png}  
+        \caption{
+         Graphs showing predictions made on a segment patient 570's data at a 30 min PH
+        }
+      \end{figure}
+
+      Over this segment, the performance across the two separate datasets is very similar at 17.95 / 17.58 mg/dL for the unfiltered / filtered data respectively. However, what is immediately clear is how the predictions produced by the unfiltered data produce a much smoother predicted data stream - there are far more micro peaks in the predictions on the filtered data. This is because of to the overfitting on the filtered data leading to much sharper predictions that are overspecialised to the training dataset.
+
+      \begin{figure}[H]
+        \centering
+
+        \includegraphics[width=0.75\textwidth]{images/ZoomedinBasic.png}
+        \caption{
+         A graph showing the prediction lag at a 30 minute PH for patient 570 with the basic LSTM
+        }
+      \end{figure}
+
+      By zooming further into a separate section of patient 570's data, we can see another issue with the current LSTM model - there is a large delay between peaks and troughs in the real data and the predicted data. As the models currently only have CGM data to predict off of, sharp peaks / troughs are incredibly difficult to readily predict as there is often no inidicator in the CGM data that the BG level is about to rise sharply. Instead this indicator would more likely be within the meal or insulin data in the form of food being eaten or insulin being dosed.
+
+      Whilst both models manage to outperform the baseline in most cases, the performances are quite close which shows that these models are not performing hugely well. Multi-input models were experimented with next, in the hopes of greatly outperfoming the baseline.
 
     \subsubsection{Compartmental LSTM}
 
-    \subsubsection{Bidirectional LSTM and others}
+    Using models trained on the CGM data as well as the compartmental curves, the above experiments are repeated. To measure the performance improvement from normalisation on these curves, the model is trained both on data that has and that hasn't been normalised.
+
+    \begin{table}[H]
+      \centering
+      \caption{A table showing the RMSE performance of the LSTM model trained with compartmental data}
+      \begin{tabular}{|*{9}{c|}} 
+        \hline
+        \multicolumn{9}{|c|}{Unnormalised Data} \\ \hline
+        \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
+        15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
+        12.58&20.22 &31.60 &10.96 &18.05 & 28.97&10.74 &19.10 &29.84 \\ \hline
+      \end{tabular}
+      \begin{tabular}{|*{9}{c|}} 
+        \hline
+        \multicolumn{9}{|c|}{Normalised Data} \\ \hline
+        \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
+        15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
+        10.39 &16.94 &26.22 &9.63 &16.79 &24.97 &10.47 &17.40 &25.49 \\ \hline
+      \end{tabular}
+    \end{table}
+
+    The inclusion of the compartmental models alone, without normalisation, improves prediction accuracy slightly for all patients but patient 563. However, when trained on the normalised data, the performance of the model improves significantly for every single patient - due to all of the input variables now being on the same scale. From this data, it is easy to say that the model trained on normalised data greatly outperforms the baseline model.
+
+    \begin{figure}[H]
+      \centering
+
+      \includegraphics[width=0.75\textwidth]{images/Compartmental.png}
+      \caption{
+       A view of the predictions made by the model on normalised data for a 30 min PH on a section of patient 570's data
+      }
+    \end{figure}
+
+    From this graph, the improvement in prediction is clearly visible as the green dotted line much more tightly hugs the actual red line. It is interesting that without the normalisation, there is a much larger variance in the performance of the model between the different patients than there is when the normalisation is applied. It is believed that this is because the inclusion of the compartmental models offers explanations for more unpredictable BG behaviour. For example, if the BG level quickly drops, then sharply rises, it could be explained by readings in the insulin and meal data, but not by the previous CGM data.
+
+    \begin{figure}[H]
+      \centering
+
+      \includegraphics[width=0.75\textwidth]{images/ZoomedinCompart.png}
+      \caption{
+       A zoomed-in view of the predictions made by the model on normalised data for a 30 min PH on a section of patient 570's data
+      }
+    \end{figure}
+
+    Looking at the zoomed-in view of the predictions made, it is unfortunate to see that although it exists to a slightly lesser extent, there is still a prediction delay between the actual and predicted curves. This slightly lesser delay is most likely due to datapoints in the compartmental curves giving the model some indication as to when peaks/troughs were going to occur.
+
+    As the basal data graph is not the most informative curve, and often consists of straight lines for long periods of time, a model is also trained only using insulin data and meal data to see if performance is improved.
+
+    \begin{table}[H]
+      \centering
+      \caption{A table showing the RMSE performance of the LSTM model trained with no basal data}
+      \begin{tabular}{|*{9}{c|}} 
+        \hline
+        \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
+        15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
+        10.50&16.77 &25.64 &9.62&16.64 &25.24 &9.67 &16.55 &23.95 \\ \hline
+      \end{tabular}
+    \end{table}
+
+    Comparing these results to the results when using basal data, we can see slight improvement almost across the board except for at 60 min PH with patient 570, where we see a slight deterioration in performance. Patient 588 especially sees large improvements to performance when removing the basal curve, which likely indicates a low quality of basal data that was pulling the model's predictions in the wrong direction. This once again highlights how reliant making BG prediction models is on the given patient's data, and how their performance can vary so greatly from patient to patient.
+
+    \subsubsection{Bidirectional LSTM}
+
+    Finally, a Bidirectional LSTM is trained both using only CGM data, and using all of the compartmental data except for the basal data. This is done to see if a more complex model can better fit to the data and make more accurate predictions than a simple LSTM.
+
+    \begin{table}[H]
+      \centering
+      \caption{A table showing the RMSE performance of the LSTM model trained with compartmental data}
+      \begin{tabular}{|*{9}{c|}} 
+        \hline
+        \multicolumn{9}{|c|}{Just CGM data} \\ \hline
+        \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
+        15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
+        13.01&19.71 &31.47 &10.30 &18.69 & 29.69&11.75 &20.11 &33.21 \\ \hline
+      \end{tabular}
+      \begin{tabular}{|*{9}{c|}} 
+        \hline
+        \multicolumn{9}{|c|}{Compartmental Data} \\ \hline
+        \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
+        15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
+        10.76 &16.92 &25.72 &9.49 &18.60 &25.85 &10.24&16.31 &24.03 \\ \hline
+      \end{tabular}
+    \end{table}
+
+    Unfortunately, the use of a more complex, bidirectional LSTM hasn't resulted in much of an improvement to performance at all. It performs very similarly to the ordinary LSTM both when using and when not using the compartmental data. This could be because of the fact that future BG levels are much more dependent on previous BG levels then previous are dependent on future. This fact means that the 'extra direction' of information that the bidirectional LSTM provides isn't actually very informative, and doesn't provide any noticeable improvement to model performance.
 	
 	\subsection{Summary}
-        Provide a brief summary of the results seen and what they show us
+      
+      Across all of the patients, any models that were trained on both the CGM data and the compartmental data performed noticeably better. This performance was enhanced significantly further when min-max scaling normalisation \cite{minmax} was applied across the input data before training. The best performing model was the simple LSTM trained on all of the normalised compartmental data apart from the basal data, with an average RMSE at 30 mins of $16.65$mg/dL across the three patients. This best model significantly outperforms the baseline, whose average across the three patients was $20.77$mg/dL. Patient 563 was consistently the worst performing patient across the models, with patients 570 and 588 alternating between having better performance depending on the model in question. Patient 588 saw by far the most performance increase when adding compartmental data and removing the basal data, which may have something to do with the fact that they are the only female patient, but is more likely to do with the quality of data recorded. Graphs for the performance of all of the models can be seen on the following page.
+      \newpage
+      \begin{figure}[H]
+        \centering
+  
+        \includegraphics[width=0.6\textwidth]{images/563Perf.png}
+        \includegraphics[width=0.6\textwidth]{images/570Perf.png}
+        \includegraphics[width=0.6\textwidth]{images/588Perf.png}
+        \caption{
+         Graphs showing the performance of every model across the different PHs for each patient
+        }
+      \end{figure}
+
+      We also compare the performance of the best performing model with the performances seen from different approaches in literature.
+
+      \begin{table}[H]
+        \begin{center}
+          \caption{A table showing individual information about the selected patients}
+          \begin{tabular}{||c c c c||} 
+          \hline
+          Author & Model Type & Accuracy (RMSE) & PH \\ [0.5ex] 
+          \hline\hline
+          Pérez-Gandía et al. \cite{paper3} & ANN on CGM data & 18.00 & 30 min \\ 
+          \hline
+          Alfian et al. \cite{paper5} & ANN with time-domain attributes & 6.31 & 30 min \\
+          \hline
+          Munoz-Organero et al. \cite{paper6} & RNN on AIDA data & 2.70 & 15 min \\
+          \hline
+          Robertson et al. \cite{paper1} & RNN with Deep CMs & 6.42 & 30 min \\
+          \hline
+          Wang et al. \cite{paper8} & VMD with IPSO & 3.03 & 30 min \\
+          \hline
+          Aliberti et al. \cite{paper9} & LSTM multiple patients & 7.18 & 30 min \\
+          \hline
+          Zhu et al. \cite{paper7} & CNN on CGM data & 21.72 & 30 min \\
+          \hline
+          Wang et al. \cite{paper10} & LightGBM & 13.90 & 30 min \\
+          \hline
+          Our model & LSTM with CMs & 16.65 & 30 min \\ [1ex]
+          \hline 
+          \end{tabular}
+        \end{center}
+      \end{table}
+
+      Our model is outperformed by most of the approaches seen in literature, however it is very hard to compare performance between them as completely different datasets are used. The simplicity of the dataset being predicted over plays a large factor in the prediction accuracy of the models. The model trained by Zhu et al. \cite{paper7} was also trained on the OhioT1DM dataset, so can be directly compared, and our model makes significantly more accurate predictions.
+
+      \subsubsection{Clinical Suitability}
+        To properly evaluate the performance of a model in this context, it is important to look at the model in a clinical light. To do so, we make use of the CEG \cite{CEGA} to view the percentage of predictions which are clinically acceptable, that is to say the percentage of predictions in Zone A of the grid. Three models are selected for clinical experimentation:
+        \begin{itemize}
+          \item Basic LSTM
+          \item LSTM with compartmental data
+          \item LSTM with normalised compartmental data without basal
+        \end{itemize}
+
+        The three models are tested at all of the 5 minute PH intervals between 5 minutes and 60 minutes inclusive, to see the degradation of RMSE performance, and the percentage of predictions that remain in Zone A of the CEG.
+
+        \begin{figure}[H]
+          \centering
+    
+          \includegraphics[width=0.75\textwidth]{images/AccOverPH.png}
+          \caption{
+           A 
+          }
+        \end{figure}
 
 % Add more sections if necessary
 
 
 %%%%%%%%%%%%%%%%%% SECTION 5 %%%%%%%%%%%%%%%%%%
-\section{Conclusions and future work} % edit section heading as appropriate
+\section{Conclusions and Future Work} % edit section heading as appropriate
     \subsection{Conclusions}
         Talk generally about the parallels and differences seen from my approach vs the approaches studied in the literature review. Explain limitations of the task in reality.
 	
@@ -620,17 +861,19 @@
 
 
 
-%%%%%%%%%%%%%%%%%% APPENDICES %%%%%%%%%%%%%%%%%%
-\begin{uomappendix} 
-    \section{Project outline}
-    Project outline as submitted at the start of the project is a required appendix. Put here. 
+% %%%%%%%%%%%%%%%%%% APPENDICES %%%%%%%%%%%%%%%%%%
+% \begin{uomappendix} 
+%     \section{Project outline}
+%     Project outline as submitted at the start of the project is a required appendix. Put here. 
     
-    \section{Risk assessment}
-    Risk assessment is a required appendix. Put here.
+%     \section{Risk assessment}
+%     Risk assessment is a required appendix. Put here.
 
-    %\section{Other appendices as necessary}
-\end{uomappendix}
+%     %\section{Other appendices as necessary}
+% \end{uomappendix}
 
 
 %%%%%%%%%%%%%%%%%% END MATTER %%%%%%%%%%%%%%%%%%
 \end{document}
+
+%A table showing the RMSE performance of the residual LSTM model

@@ -2254,6 +2254,17 @@
     <bcf:citekey order="69">bilstm</bcf:citekey>
     <bcf:citekey order="70">cegcode</bcf:citekey>
     <bcf:citekey order="71">hyperband</bcf:citekey>
+    <bcf:citekey order="72">minmax</bcf:citekey>
+    <bcf:citekey order="73">paper3</bcf:citekey>
+    <bcf:citekey order="74">paper5</bcf:citekey>
+    <bcf:citekey order="75">paper6</bcf:citekey>
+    <bcf:citekey order="76">paper1</bcf:citekey>
+    <bcf:citekey order="77">paper8</bcf:citekey>
+    <bcf:citekey order="78">paper9</bcf:citekey>
+    <bcf:citekey order="79">paper7</bcf:citekey>
+    <bcf:citekey order="80">paper10</bcf:citekey>
+    <bcf:citekey order="81">paper7</bcf:citekey>
+    <bcf:citekey order="82">CEGA</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

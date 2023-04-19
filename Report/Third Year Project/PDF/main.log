@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2023.4.10)  18 APR 2023 21:04
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2023.4.10)  19 APR 2023 22:04
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1391,205 +1391,265 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2])
+))
 \tf@toc=\write8
 
 \openout8 = main.toc
- [3] [4
-
+ [2] [3] [4
 
 ]
 [5
 
 
-] [6]
-<images/glucometer.jpg, id=143, 1120.185pt x 787.94376pt>
+] [6
+
+
+] [7]
+<images/glucometer.jpg, id=145, 1120.185pt x 787.94376pt>
 File: images/glucometer.jpg Graphic file (type jpg)
 <use images/glucometer.jpg>
-Package luatex.def Info: images/glucometer.jpg  used on input line 152.
+Package luatex.def Info: images/glucometer.jpg  used on input line 156.
 (luatex.def)             Requested size: 241.84843pt x 170.11397pt.
- [7]
-<images/CGMPump.png, id=160, 693.59125pt x 461.725pt>
+ [8]
+<images/CGMPump.png, id=162, 693.59125pt x 461.725pt>
 File: images/CGMPump.png Graphic file (type png)
 <use images/CGMPump.png>
-Package luatex.def Info: images/CGMPump.png  used on input line 160.
+Package luatex.def Info: images/CGMPump.png  used on input line 164.
 (luatex.def)             Requested size: 241.84843pt x 161.00027pt.
- [8<./images/glucometer.jpg><./images/CGMPump.png>]
-<images/basicNN.png, id=175, 803.0pt x 403.5075pt>
+ [9<./images/glucometer.jpg><./images/CGMPump.png>]
+<images/basicNN.png, id=177, 803.0pt x 403.5075pt>
 File: images/basicNN.png Graphic file (type png)
 <use images/basicNN.png>
-Package luatex.def Info: images/basicNN.png  used on input line 175.
+Package luatex.def Info: images/basicNN.png  used on input line 179.
 (luatex.def)             Requested size: 241.84843pt x 121.52727pt.
- [9]
-<images/gradientdescent.png, id=186, 756.8275pt x 469.755pt>
+ [10]
+<images/gradientdescent.png, id=188, 756.8275pt x 469.755pt>
 File: images/gradientdescent.png Graphic file (type png)
 <use images/gradientdescent.png>
-Package luatex.def Info: images/gradientdescent.png  used on input line 183.
+Package luatex.def Info: images/gradientdescent.png  used on input line 187.
 (luatex.def)             Requested size: 241.84843pt x 150.10963pt.
- [10<./images/basicNN.png><./images/gradientdescent.png>] [11]
-<images/basicRNN.png, id=218, 977.8131pt x 256.91985pt>
+
+[11<./images/basicNN.png><./images/gradientdescent.png>] [12]
+<images/basicRNN.png, id=220, 977.8131pt x 256.91985pt>
 File: images/basicRNN.png Graphic file (type png)
 <use images/basicRNN.png>
-Package luatex.def Info: images/basicRNN.png  used on input line 205.
+Package luatex.def Info: images/basicRNN.png  used on input line 209.
 (luatex.def)             Requested size: 241.84843pt x 63.54375pt.
- [12]
-<images/basicLSTM.png, id=231, 602.25pt x 268.00125pt>
+ [13]
+<images/basicLSTM.png, id=233, 602.25pt x 268.00125pt>
 File: images/basicLSTM.png Graphic file (type png)
 <use images/basicLSTM.png>
-Package luatex.def Info: images/basicLSTM.png  used on input line 213.
+Package luatex.def Info: images/basicLSTM.png  used on input line 217.
 (luatex.def)             Requested size: 241.84843pt x 107.62389pt.
- [13<./images/basicRNN.png><./images/basicLSTM.png>] [14] [15]
-<images/cega.png, id=277, 521.95pt x 273.02pt>
+ [14<./images/basicRNN.png><./images/basicLSTM.png>] [15] [16]
+<images/cega.png, id=279, 521.95pt x 273.02pt>
 File: images/cega.png Graphic file (type png)
 <use images/cega.png>
-Package luatex.def Info: images/cega.png  used on input line 235.
+Package luatex.def Info: images/cega.png  used on input line 239.
 (luatex.def)             Requested size: 362.77264pt x 189.75876pt.
 
-Overfull \hbox (1.1879pt too wide) in paragraph at lines 241--242
+Overfull \hbox (1.1879pt too wide) in paragraph at lines 245--246
 \TU/Calibri.ttf(0)/m/n/12 shal-low-ness in the data and in-hibits the train-ing
  of more ac-cu-rate mod-els. Al-ib-erti et al. [[][]35[]] sought 
  []
 
-[16<./images/cega.png>] [17]
-<images/codeflow.png, id=306, 698.61pt x 191.71625pt>
+[17<./images/cega.png>] [18]
+<images/codeflow.png, id=308, 698.61pt x 191.71625pt>
 File: images/codeflow.png Graphic file (type png)
 <use images/codeflow.png>
-Package luatex.def Info: images/codeflow.png  used on input line 260.
+Package luatex.def Info: images/codeflow.png  used on input line 264.
 (luatex.def)             Requested size: 483.69687pt x 132.74069pt.
- [18<./images/codeflow.png>] [19]
-<images/XMlFile.png, id=321, 947.54pt x 431.6125pt>
+ [19<./images/codeflow.png>] [20]
+<images/XMlFile.png, id=323, 947.54pt x 431.6125pt>
 File: images/XMlFile.png Graphic file (type png)
 <use images/XMlFile.png>
-Package luatex.def Info: images/XMlFile.png  used on input line 312.
+Package luatex.def Info: images/XMlFile.png  used on input line 316.
 (luatex.def)             Requested size: 169.29684pt x 77.11392pt.
-<images/InsulinXML.png, id=322, 1493.58pt x 453.695pt>
+<images/InsulinXML.png, id=324, 1493.58pt x 453.695pt>
 File: images/InsulinXML.png Graphic file (type png)
 <use images/InsulinXML.png>
-Package luatex.def Info: images/InsulinXML.png  used on input line 313.
+Package luatex.def Info: images/InsulinXML.png  used on input line 317.
 (luatex.def)             Requested size: 241.84843pt x 73.46495pt.
- [20<./images/XMlFile.png><./images/InsulinXML.png>]
-<images/CarbIntakeDE.png, id=336, 772.8875pt x 222.8325pt>
+ [21<./images/XMlFile.png><./images/InsulinXML.png>]
+<images/CarbIntakeDE.png, id=339, 772.8875pt x 222.8325pt>
 File: images/CarbIntakeDE.png Graphic file (type png)
 <use images/CarbIntakeDE.png>
-Package luatex.def Info: images/CarbIntakeDE.png  used on input line 332.
+Package luatex.def Info: images/CarbIntakeDE.png  used on input line 336.
 (luatex.def)             Requested size: 266.03474pt x 76.70049pt.
-<images/InsulinDE.png, id=337, 1011.78pt x 269.005pt>
+<images/InsulinDE.png, id=340, 1011.78pt x 269.005pt>
 File: images/InsulinDE.png Graphic file (type png)
 <use images/InsulinDE.png>
-Package luatex.def Info: images/InsulinDE.png  used on input line 333.
+Package luatex.def Info: images/InsulinDE.png  used on input line 337.
 (luatex.def)             Requested size: 290.22107pt x 77.16388pt.
- [21<./images/CarbIntakeDE.png><./images/InsulinDE.png>]
-<images/InsulinSM.png, id=355, 737.154pt x 380.1402pt>
+ [22<./images/CarbIntakeDE.png><./images/InsulinDE.png>]
+<images/InsulinSM.png, id=357, 737.154pt x 380.1402pt>
 File: images/InsulinSM.png Graphic file (type png)
 <use images/InsulinSM.png>
-Package luatex.def Info: images/InsulinSM.png  used on input line 346.
+Package luatex.def Info: images/InsulinSM.png  used on input line 350.
 (luatex.def)             Requested size: 362.77264pt x 187.08238pt.
-<images/InsulinLG.png, id=356, 721.2546pt x 380.1402pt>
+<images/InsulinLG.png, id=358, 721.2546pt x 380.1402pt>
 File: images/InsulinLG.png Graphic file (type png)
 <use images/InsulinLG.png>
-Package luatex.def Info: images/InsulinLG.png  used on input line 356.
+Package luatex.def Info: images/InsulinLG.png  used on input line 360.
 (luatex.def)             Requested size: 362.77264pt x 191.20071pt.
- [22<./images/InsulinSM.png><./images/InsulinLG.png>]
-<images/InsulinDB.png, id=365, 715.473pt x 380.1402pt>
+ [23<./images/InsulinSM.png><./images/InsulinLG.png>]
+<images/InsulinDB.png, id=367, 715.473pt x 380.1402pt>
 File: images/InsulinDB.png Graphic file (type png)
 <use images/InsulinDB.png>
-Package luatex.def Info: images/InsulinDB.png  used on input line 366.
+Package luatex.def Info: images/InsulinDB.png  used on input line 370.
 (luatex.def)             Requested size: 362.77264pt x 192.74364pt.
-<images/CarbsSM.png, id=366, 714.7503pt x 380.1402pt>
+<images/CarbsSM.png, id=368, 714.7503pt x 380.1402pt>
 File: images/CarbsSM.png Graphic file (type png)
 <use images/CarbsSM.png>
-Package luatex.def Info: images/CarbsSM.png  used on input line 381.
+Package luatex.def Info: images/CarbsSM.png  used on input line 385.
 (luatex.def)             Requested size: 217.66211pt x 115.76567pt.
-<images/CarbsLG.png, id=367, 727.0362pt x 380.1402pt>
+<images/CarbsLG.png, id=369, 727.0362pt x 380.1402pt>
 File: images/CarbsLG.png Graphic file (type png)
 <use images/CarbsLG.png>
-Package luatex.def Info: images/CarbsLG.png  used on input line 382.
+Package luatex.def Info: images/CarbsLG.png  used on input line 386.
 (luatex.def)             Requested size: 217.66211pt x 113.80511pt.
- [23<./images/InsulinDB.png><./images/CarbsSM.png><./images/CarbsLG.png>]
-<images/BasalLG.png, id=379, 724.1454pt x 380.1402pt>
+ [24<./images/InsulinDB.png><./images/CarbsSM.png><./images/CarbsLG.png>]
+<images/BasalLG.png, id=381, 724.1454pt x 380.1402pt>
 File: images/BasalLG.png Graphic file (type png)
 <use images/BasalLG.png>
-Package luatex.def Info: images/BasalLG.png  used on input line 396.
+Package luatex.def Info: images/BasalLG.png  used on input line 400.
 (luatex.def)             Requested size: 362.77264pt x 190.44084pt.
- [24<./images/BasalLG.png>]
-<images/filtered.png, id=391, 727.0362pt x 383.031pt>
+ [25<./images/BasalLG.png>]
+<images/filtered.png, id=393, 727.0362pt x 383.031pt>
 File: images/filtered.png Graphic file (type png)
 <use images/filtered.png>
-Package luatex.def Info: images/filtered.png  used on input line 417.
+Package luatex.def Info: images/filtered.png  used on input line 421.
 (luatex.def)             Requested size: 362.77264pt x 191.12343pt.
- [25<./images/filtered.png>]
-<images/UnNormed.png, id=403, 845.1575pt x 485.815pt>
+ [26<./images/filtered.png>]
+<images/UnNormed.png, id=405, 845.1575pt x 485.815pt>
 File: images/UnNormed.png Graphic file (type png)
 <use images/UnNormed.png>
-Package luatex.def Info: images/UnNormed.png  used on input line 438.
+Package luatex.def Info: images/UnNormed.png  used on input line 442.
 (luatex.def)             Requested size: 217.66211pt x 125.11543pt.
-<images/Normed.png, id=404, 847.165pt x 479.7925pt>
+<images/Normed.png, id=406, 847.165pt x 479.7925pt>
 File: images/Normed.png Graphic file (type png)
 <use images/Normed.png>
-Package luatex.def Info: images/Normed.png  used on input line 439.
+Package luatex.def Info: images/Normed.png  used on input line 443.
 (luatex.def)             Requested size: 217.66211pt x 123.27158pt.
-<images/InsulinWindow.png, id=405, 727.0362pt x 380.1402pt>
+<images/InsulinWindow.png, id=407, 727.0362pt x 380.1402pt>
 File: images/InsulinWindow.png Graphic file (type png)
 <use images/InsulinWindow.png>
-Package luatex.def Info: images/InsulinWindow.png  used on input line 458.
+Package luatex.def Info: images/InsulinWindow.png  used on input line 462.
 (luatex.def)             Requested size: 362.77264pt x 189.68098pt.
- [26<./images/UnNormed.png><./images/Normed.png>]
-<images/InsulinSlices.png, id=413, 737.154pt x 380.1402pt>
+ [27<./images/UnNormed.png><./images/Normed.png>]
+<images/InsulinSlices.png, id=415, 737.154pt x 380.1402pt>
 File: images/InsulinSlices.png Graphic file (type png)
 <use images/InsulinSlices.png>
-Package luatex.def Info: images/InsulinSlices.png  used on input line 469.
+Package luatex.def Info: images/InsulinSlices.png  used on input line 473.
 (luatex.def)             Requested size: 362.77264pt x 187.08238pt.
- [27<./images/InsulinWindow.png><./images/InsulinSlices.png>]
-<images/linearbase.png, id=426, 727.0362pt x 380.1402pt>
+ [28<./images/InsulinWindow.png><./images/InsulinSlices.png>]
+<images/linearbase.png, id=428, 727.0362pt x 380.1402pt>
 File: images/linearbase.png Graphic file (type png)
 <use images/linearbase.png>
-Package luatex.def Info: images/linearbase.png  used on input line 488.
+Package luatex.def Info: images/linearbase.png  used on input line 492.
 (luatex.def)             Requested size: 362.77264pt x 189.68098pt.
 
-Overfull \hbox (0.32266pt too wide) in paragraph at lines 496--497
+Overfull \hbox (0.32266pt too wide) in paragraph at lines 500--501
 \TU/Calibri.ttf(0)/m/n/12 The set of ap-proaches be-ing ex-plored in this proje
 ct all use the ba-sis on an LSTM RNN model, which 
  []
 
 
-Overfull \hbox (27.76077pt too wide) in paragraph at lines 496--497
+Overfull \hbox (27.76077pt too wide) in paragraph at lines 500--501
 \TU/Calibri.ttf(0)/m/n/12 was ex-plained in chap-ter 2.5.1 of the lit-er-a-ture
  re-view. Us-ing [], 
  []
 
-<images/BasicLSTM.png, id=427, 240.9pt x 353.32pt>
+<images/BasicLSTM.png, id=429, 240.9pt x 353.32pt>
 File: images/BasicLSTM.png Graphic file (type png)
 <use images/BasicLSTM.png>
-Package luatex.def Info: images/BasicLSTM.png  used on input line 501.
+Package luatex.def Info: images/BasicLSTM.png  used on input line 505.
 (luatex.def)             Requested size: 120.92421pt x 177.35503pt.
-[28<./images/linearbase.png>] [29<./images/BasicLSTM.png>]
-<images/BiLSTM.png, id=444, 691.58376pt x 430.60875pt>
+[29<./images/linearbase.png>] [30<./images/BasicLSTM.png>]
+<images/BiLSTM.png, id=446, 691.58376pt x 430.60875pt>
 File: images/BiLSTM.png Graphic file (type png)
 <use images/BiLSTM.png>
-Package luatex.def Info: images/BiLSTM.png  used on input line 526.
+Package luatex.def Info: images/BiLSTM.png  used on input line 530.
 (luatex.def)             Requested size: 241.84843pt x 150.5839pt.
-<images/BiDiagram.png, id=447, 392.46625pt x 353.32pt>
+<images/BiDiagram.png, id=449, 392.46625pt x 353.32pt>
 File: images/BiDiagram.png Graphic file (type png)
 <use images/BiDiagram.png>
-Package luatex.def Info: images/BiDiagram.png  used on input line 537.
+Package luatex.def Info: images/BiDiagram.png  used on input line 541.
 (luatex.def)             Requested size: 120.92421pt x 108.85956pt.
- [30<./images/BiLSTM.png><./images/BiDiagram.png>]
-<images/multiIn.png, id=460, 573.14125pt x 282.05376pt>
+ [31<./images/BiLSTM.png><./images/BiDiagram.png>]
+<images/multiIn.png, id=463, 573.14125pt x 282.05376pt>
 File: images/multiIn.png Graphic file (type png)
 <use images/multiIn.png>
-Package luatex.def Info: images/multiIn.png  used on input line 550.
+Package luatex.def Info: images/multiIn.png  used on input line 554.
 (luatex.def)             Requested size: 217.66211pt x 107.11697pt.
+ [32<./images/multiIn.png>] [33] [34]
+<images/Basic305.png, id=491, 727.0362pt x 396.7623pt>
+File: images/Basic305.png Graphic file (type png)
+<use images/Basic305.png>
+Package luatex.def Info: images/Basic305.png  used on input line 669.
+(luatex.def)             Requested size: 314.40001pt x 171.5731pt.
+<images/Filt305.png, id=492, 727.0362pt x 396.7623pt>
+File: images/Filt305.png Graphic file (type png)
+<use images/Filt305.png>
+Package luatex.def Info: images/Filt305.png  used on input line 670.
+(luatex.def)             Requested size: 314.40001pt x 171.5731pt.
+ [35]
+<images/ZoomedinBasic.png, id=499, 727.0362pt x 396.7623pt>
+File: images/ZoomedinBasic.png Graphic file (type png)
+<use images/ZoomedinBasic.png>
+Package luatex.def Info: images/ZoomedinBasic.png  used on input line 681.
+(luatex.def)             Requested size: 362.77264pt x 197.97502pt.
 
-Overfull \hbox (263.85263pt too wide) in paragraph at lines 562--563
-[]\TU/Calibri.ttf(0)/m/n/12 The im-ple-men-ta-tion of RMSE is sim-ple as ten-so
-r-flow pro-vides a pre-made im-ple-men-ta-tion in []. 
+[36<./images/Basic305.png><./images/Filt305.png><./images/ZoomedinBasic.png>]
+<images/Compartmental.png, id=509, 727.0362pt x 380.1402pt>
+File: images/Compartmental.png Graphic file (type png)
+<use images/Compartmental.png>
+Package luatex.def Info: images/Compartmental.png  used on input line 719.
+(luatex.def)             Requested size: 362.77264pt x 189.68098pt.
+
+[37]
+<images/ZoomedinCompart.png, id=516, 727.0362pt x 380.1402pt>
+File: images/ZoomedinCompart.png Graphic file (type png)
+<use images/ZoomedinCompart.png>
+Package luatex.def Info: images/ZoomedinCompart.png  used on input line 730.
+(luatex.def)             Requested size: 362.77264pt x 189.68098pt.
+ [38<./images/Compartmental.png><./images/ZoomedinCompart.png>] [39]
+[40]
+<images/563Perf.png, id=538, 721.2546pt x 601.2864pt>
+File: images/563Perf.png Graphic file (type png)
+<use images/563Perf.png>
+Package luatex.def Info: images/563Perf.png  used on input line 785.
+(luatex.def)             Requested size: 290.22107pt x 241.94157pt.
+<images/570Perf.png, id=539, 721.2546pt x 601.2864pt>
+File: images/570Perf.png Graphic file (type png)
+<use images/570Perf.png>
+Package luatex.def Info: images/570Perf.png  used on input line 786.
+(luatex.def)             Requested size: 290.22107pt x 241.94157pt.
+<images/588Perf.png, id=540, 721.2546pt x 601.2864pt>
+File: images/588Perf.png Graphic file (type png)
+<use images/588Perf.png>
+Package luatex.def Info: images/588Perf.png  used on input line 787.
+(luatex.def)             Requested size: 290.22107pt x 241.94157pt.
+
+Overfull \vbox (18.58888pt too high) has occurred while \output is active []
+
+
+[41<./images/563Perf.png><./images/570Perf.png><./images/588Perf.png>]
+Overfull \hbox (2.4672pt too wide) in paragraph at lines 827--829
+\TU/Calibri.ttf(0)/m/n/12 To prop-erly eval-u-ate the per-for-mance of a model 
+in this con-text, it is im-por-tant to look at the model 
  []
 
-[31<./images/multiIn.png>] [32] [33] [34]
+<images/AccOverPH.png, id=560, 721.2546pt x 491.436pt>
+File: images/AccOverPH.png Graphic file (type png)
+<use images/AccOverPH.png>
+Package luatex.def Info: images/AccOverPH.png  used on input line 839.
+(luatex.def)             Requested size: 362.77264pt x 247.17964pt.
+[42] [43<./images/AccOverPH.png>] [44]
 ! Misplaced alignment tab character &.
 <argument> Diabetes Technology &
                       Therapeutics
-l.619 ...graphy[title={References},heading=bibintoc]
+l.860 ...graphy[title={References},heading=bibintoc]
                                                    % a single list of refere...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1598,15 +1658,15 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[35]
-Overfull \hbox (2.30899pt too wide) in paragraph at lines 619--619
+[45]
+Overfull \hbox (2.30899pt too wide) in paragraph at lines 860--860
 []\TU/Calibri.ttf(0)/m/n/12 ——, ``Mass trans-port and heat trans-fer in the
  mi-cro-cir-cu-la-tion,'' \TU/Calibri.ttf(0)/m/it/12 Biofluid Me-chan-ics\TU/Ca
 libri.ttf(0)/m/n/12 , pp. 331– 
  []
 
-[36] [37]
-Overfull \hbox (8.75613pt too wide) in paragraph at lines 619--619
+[46] [47]
+Overfull \hbox (8.75613pt too wide) in paragraph at lines 860--860
 []\TU/Calibri.ttf(0)/m/n/12 M. Alom, ``Adam op-ti-miza-tion al-go-rithm,'' \TU/
 Calibri.ttf(0)/m/it/12 Re-search-Gate\TU/Calibri.ttf(0)/m/n/12 , Jun. 2021. [On
 -line]. Avail-able: []$\TU/lmtt/m/n/12 https : 
@@ -1615,7 +1675,7 @@ Calibri.ttf(0)/m/it/12 Re-search-Gate\TU/Calibri.ttf(0)/m/n/12 , Jun. 2021. [On
 ! Missing $ inserted.
 <inserted text> 
 $
-l.619 ...graphy[title={References},heading=bibintoc]
+l.860 ...graphy[title={References},heading=bibintoc]
                                                    % a single list of refere...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1623,7 +1683,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \MakeLowercase  ... {\lowercase {#1}}\reserved@a }
                                                   
-l.619 ...graphy[title={References},heading=bibintoc]
+l.860 ...graphy[title={References},heading=bibintoc]
                                                    % a single list of refere...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1634,7 +1694,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.619 ...graphy[title={References},heading=bibintoc]
+l.860 ...graphy[title={References},heading=bibintoc]
                                                    % a single list of refere...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1645,7 +1705,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.619 ...graphy[title={References},heading=bibintoc]
+l.860 ...graphy[title={References},heading=bibintoc]
                                                    % a single list of refere...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1653,31 +1713,29 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[38] [39
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 636.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 636.
+[48]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 877.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 877.
  (./PDF/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 636.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 636.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 877.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 877.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 636.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 877.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35176 strings out of 481365
+ 35297 strings out of 481365
  100000,1648299 words of node,token memory allocated
  1397 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 64 attribute, 124 glue_spe
 c, 64 attribute_list, 2 write, 53 pdf_action nodes
-   avail lists: 1:3,2:926,3:430,4:40,5:797,6:104,7:5977,8:175,9:251,10:17,11:371
+   avail lists: 1:3,2:942,3:413,4:40,5:798,6:115,7:5977,8:175,9:414,10:21,11:371
 
- 50749 multiletter control sequences out of 65536+600000
+ 50793 multiletter control sequences out of 65536+600000
  60 fonts using 9114683 bytes
- 52i,8n,82p,2403b,2690s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 52i,9n,82p,2403b,2694s stack positions out of 5000i,500n,10000p,200000b,100000s
 <./fonts/CalibriItalic.ttf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-r
 egular.otf><./fonts/Calibri.ttf><./fonts/CalibriBold.ttf></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
@@ -1687,9 +1745,9 @@ blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb>
-Output written on main.pdf (39 pages, 1951931 bytes).
+Output written on main.pdf (48 pages, 2478951 bytes).
 
-PDF statistics: 885 PDF objects out of 1000 (max. 8388607)
- 176 named destinations out of 1000 (max. 131072)
- 335 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 974 PDF objects out of 1000 (max. 8388607)
+ 199 named destinations out of 1000 (max. 131072)
+ 327 words of extra memory for PDF output out of 10000 (max. 100000000)
 
