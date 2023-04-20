@@ -110,7 +110,7 @@
   
 %%%%%%%%%%%%%%%%%% ABSTRACT %%%%%%%%%%%%%%%%%%
 \begin{abstract} % put abstract here. Limit is 1 page.
-  This is abstract text. 
+  Type 1 Diabetes Mellitus (T1DM) is a series chronic illness which is becoming more and more common in the modern world. This project covers the capabilities that artificial intelligence has to improve the lives of patients who are suffering from the condition, by offering future predictions of when problems may occur. This is done both by examining approaches taken in literature, and implementing a selection of these approaches. Multiple machine learning models are implemented and tested against one another across the data of three separate T1DM patients, with predictions ranging from 15, 30 and 60 minutes into the future. All models were implemented using python and tensorflow. The best performing model achieved an average root mean squared error score of 16.65 mg/dL across the 3 patients when making predictions 30 minutes into the future. Moreover, this model is able to make predictions that are classed as clinically accurate over time frames up to 50 minutes into the future, before predictions start to become unreliable. Overall, the results of this project coincide with those seen in literature in the sense that they are promising results which show off the capabilities of such machine learning models. However, without the conduction of large scale in vitro testing, it is still uncertain as to whether such prediction models are capable of accurately predicting the blood glucose levels of a T1DM patient in their day-to-day lives. 
   
 \end{abstract}%
 \clearpage
@@ -121,7 +121,7 @@
   \subsection{Background and motivation}
     Talk about diabetes generally, can take from introduction of lit review
 
-    Type 1 Diabetes Mellitus (T1DM) is a life-long autoimmune disease that typically manifests itself in children between 10 and 14 years of age. That is not to say, however, that a diagnosis of T1DM is restricted to those individuals within this age range, and whilst it is rare for diagnosis to be made in individuals over 40, it is possible for a diagnosis of T1DM to occur at any age. T1DM is characterised by the destruction of the beta-cells within the pancreas which are responsible for producing insulin \cite{t1d}, a hormone used  by the body to help blood glucose to be absorbed by cells to be used for energy \cite{insulin}, and to store blood glucose for later use. This loss of insulin producing beta cells means that there is an inability for T1DM patients to regulate their own blood glucose levels, which if left untreated can lead to hyperglycemia (blood glucose levels being too high). As such, T1DM patients are reliant on the subcutaneous injection of synthetic insulin to control the glycemic levels in their body and to maintain a healthy blood glucose level. Diagnosis of the condition is based on hyperglycemia, with a fasting blood glucose concentration above 7.0 mmol/L being characterised as enough to diagnose. Other symptoms commonly seen before diagnosis are going to the toilet a lot, constantly being thirsty, and weight loss \cite{t1dcauses}.
+    Type 1 Diabetes Mellitus is a life-long autoimmune disease that typically manifests itself in children between 10 and 14 years of age. That is not to say, however, that a diagnosis of T1DM is restricted to those individuals within this age range, and whilst it is rare for diagnosis to be made in individuals over 40, it is possible for a diagnosis of T1DM to occur at any age. T1DM is characterised by the destruction of the beta-cells within the pancreas which are responsible for producing insulin \cite{t1d}, a hormone used  by the body to help blood glucose to be absorbed by cells to be used for energy \cite{insulin}, and to store blood glucose for later use. This loss of insulin producing beta cells means that there is an inability for T1DM patients to regulate their own blood glucose levels, which if left untreated can lead to hyperglycemia (blood glucose levels being too high). As such, T1DM patients are reliant on the subcutaneous injection of synthetic insulin to control the glycemic levels in their body and to maintain a healthy blood glucose level. Diagnosis of the condition is based on hyperglycemia, with a fasting blood glucose concentration above 7.0 mmol/L being characterised as enough to diagnose. Other symptoms commonly seen before diagnosis are going to the toilet a lot, constantly being thirsty, and weight loss \cite{t1dcauses}.
 
     In order to calculate how much external insulin to inject, and thus avoid hyperglycemia and hypoglycemia (blood glucose levels being too low), T1DM patients must keep track of how much glucose they ingest and dose themselves with a corresponding volume of insulin. This counting and dosing process is not an exact science, and being inaccurate can lead to potentially life-threatening situations for patients. As such, technology has been introduced to make the process easier. Continuous Glucose Monitoring (CGM) devices \cite{pumpcgm} provide real-time information on someone's current Blood Glucose (BG) levels, whilst insulin pumps exist that are capable of slowly providing insulin over a long period of time, rather than having a single large dose given by injection pen. This new technology has greatly improved the lives of many patients, and there is hope that new technology can continue to do the same. One of the main issues with current technology is that whilst it is able to immediately detect issues with current BG levels, there is still a response time between corrective actions being taken and their impacts on BG levels. This response time has lead to much research being done into predictive algorithms that could inform a patient ahead of time of any issues that may occur, allowing them to react with ample time and avoid any high/low blood glucose levels before they even manifest. One such branch of these predictive algorithms is machine learning algorithms and an exploration of this topic will form the basis of this project report.
   
@@ -249,9 +249,9 @@
       So far all of the approaches have viewed the task of BG Prediction as a regression task where you are trying to predict a value for the BG variation over the PH. Zhu et al. \cite{paper7} instead formulated the problem as a classification problem, where the change between current glucose value and the future glucose value is quantised into 256 different classes to be predicted between. The data was sourced from the OhioT1DM dataset \cite{ohio}, which is a dataset of real-life diabetes patients. Zhu et al. used a Convolution Neural Network (CNN) \cite{whatiscnn} a type of neural network typically used in image recognition, due to its ability to reduce the dimensionality of input data. Over a 30 minute PH, the approach achieved an average RMSE of 21.72 mg/dL for its predictions, which is not as promising as other approaches we have seen involving regression via an RNN. Another approach not using the traditional RNN was experimented with by Wang et al. \cite{paper10}, who built a model based on LightGBM \cite{lightgbm} - a gradient boosting algorithm that generates a decision tree to make predictions on the data. Over a 30 minute PH, they achieved a RMSE of 0.7721 mmol/L, which just falls within the range of accurate predictions, showing that the approach has merit at shorter prediction horizons.
 
 	\subsection{Conclusions}
-      In summary, we have seen a variety of different approaches to performing BG prediction using neural networks with various levels of success. Some approaches incorporated a large number of factors as well as CGM data, whilst others included more factors relating to the CGM data itself such as maximum and minimum points. However, despite all of these differences, all of the approaches shared in common that the performance dropped of quickly as the PH grew longer as well as the fact that they had not been trialed at all in an in vitro scenario. Coupling this lack of in vitro testing, along with the fact that approaches used a myriad of different datasets makes it very hard to say whether one approach is better than another, despite the common RMSE metric, or whether the dataset they were using lent itself towards being much easier to be predicted over; either due to a more gradual nature in the change of BG levels, or a better quality of data. 
+      In summary, we have seen a variety of different approaches to performing BG prediction using neural networks with various levels of success. Some approaches incorporated a large number of factors as well as CGM data, whilst others included more factors relating to the CGM data itself such as maximum and minimum points. However, despite all of these differences, all of the approaches shared in common that the performance dropped of quickly as the PH grew longer as well as the fact that they had not been trialed at all in an in vitro scenario. Coupling this lack of in vitro testing, along with the fact that approaches used a myriad of different datasets makes it very hard to say whether one approach is better than another, despite the common RMSE metric. It could just be that the dataset they were using lent itself towards being much easier to be predicted over; either due to a more gradual nature in the change of BG levels, or a better quality of data. 
 
-      To rectify the second of these issues, some of these researched approaches and their features will be selected and implemneted using a consistent dataset - the OhioT1DM dataset \cite{ohio}. Through the use of a common dataset, there will be a common platform by which we can judge the performance of these different methods over differing prediction horizons.
+      To rectify the second of these issues, some of these researched approaches and their features will be selected and implemented using a consistent dataset - the OhioT1DM dataset \cite{ohio}. Through the use of a common dataset, there will be a common platform by which we can judge the performance of these different methods over differing prediction horizons. Once the models have been developed, the separate issue of the lack of in vitro testing will also be tackled, by discussing the work that would need to be done to take such a model to a real-life test.
 
 %%%%%%%%%%%%%%%%%% SECTION 3 %%%%%%%%%%%%%%%%%%
 \section{Methodology} % edit section heading as appropriate
@@ -606,7 +606,7 @@
           \hline
           \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
           15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
-          13.05&20.78 &33.96 &12.75&22.06 &36.07 &11.44 &19.46 &32.21 \\ \hline
+          $13.05$&$20.78$ &$33.96$ &$12.75$&$22.06$ &$36.07$ &$11.44$ &$19.46$ &$32.21$ \\ \hline
         \end{tabular}
       \end{table}
 
@@ -628,14 +628,14 @@
           \multicolumn{9}{|c|}{Unfiltered Data} \\ \hline
           \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
           15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
-          12.60&18.95 &30.56 &10.74 &17.95 &29.72 &11.11 &20.63 &33.20 \\ \hline
+          $12.60$&$18.95$ &$30.56$ &$10.74$ &$17.95$ &$29.72$ &$11.11$ &$20.63$ &$33.20$ \\ \hline
         \end{tabular}
         \begin{tabular}{|*{9}{c|}} 
           \hline
           \multicolumn{9}{|c|}{Filtered Data} \\ \hline
           \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
           15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
-          14.62 &19.98 &30.81 &10.77 &17.58 &31.21 &12.39 &19.56 &32.88 \\ \hline
+          $14.62$ &$19.98$ &$30.81$ &$10.77$ &$17.58$ &$31.21$ &$12.39$ &$19.56$ &$32.88$ \\ \hline
         \end{tabular}
       \end{table}
 
@@ -647,14 +647,14 @@
           \multicolumn{9}{|c|}{Unfiltered Data} \\ \hline
           \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
           15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
-          14.18&20.67 &32.84 &11.87 &18.61 & 31.28&13.23 &21.09 &34.65 \\ \hline
+          $14.18$&$20.67$ &$32.84$ &$11.87$ &$18.61$ & $31.28$&$13.23$ &$21.09$ &$34.65$ \\ \hline
         \end{tabular}
         \begin{tabular}{|*{9}{c|}} 
           \hline
           \multicolumn{9}{|c|}{Filtered Data} \\ \hline
           \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
           15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
-          14.36 &21.09 &31.58 &11.47 &18.01 &31.49 &13.31 &20.35 &33.92 \\ \hline
+          $14.36$ &$21.09$ &$31.58$ &$11.47$ &$18.01$ &$31.49$ &$13.31$ &$20.35$ &$33.92$ \\ \hline
         \end{tabular}
       \end{table}
 
@@ -700,14 +700,14 @@
         \multicolumn{9}{|c|}{Unnormalised Data} \\ \hline
         \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
         15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
-        12.58&20.22 &31.60 &10.96 &18.05 & 28.97&10.74 &19.10 &29.84 \\ \hline
+        $12.58$&$20.22$ &$31.60$ &$10.96$ &$18.05$ & $28.97$&$10.74$ &$19.10$ &$29.84$ \\ \hline
       \end{tabular}
       \begin{tabular}{|*{9}{c|}} 
         \hline
         \multicolumn{9}{|c|}{Normalised Data} \\ \hline
         \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
         15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
-        10.39 &16.94 &26.22 &9.63 &16.79 &24.97 &10.47 &17.40 &25.49 \\ \hline
+        $10.39$ &$16.94$ &$26.22$ &$9.63$ &$16.79$ &$24.97$ &$10.47$ &$17.40$ &$25.49$ \\ \hline
       \end{tabular}
     \end{table}
 
@@ -744,7 +744,7 @@
         \hline
         \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
         15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
-        10.50&16.77 &25.64 &9.62&16.64 &25.24 &9.67 &16.55 &23.95 \\ \hline
+        $10.50$&$16.77$ &$25.64$ &$9.62$&$16.64$ &$25.24$ &$9.67$ &$16.55$ &$23.95$ \\ \hline
       \end{tabular}
     \end{table}
 
@@ -756,25 +756,72 @@
 
     \begin{table}[H]
       \centering
-      \caption{A table showing the RMSE performance of the LSTM model trained with compartmental data}
+      \caption{A table showing the RMSE performance of the bidirectional LSTM}
       \begin{tabular}{|*{9}{c|}} 
         \hline
         \multicolumn{9}{|c|}{Just CGM data} \\ \hline
         \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
         15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
-        13.01&19.71 &31.47 &10.30 &18.69 & 29.69&11.75 &20.11 &33.21 \\ \hline
+        $13.01$&$19.71$ &$31.47$ &$10.30$ &$18.69$ & $29.69$&$11.75$ &$20.11$ &$33.21$ \\ \hline
       \end{tabular}
       \begin{tabular}{|*{9}{c|}} 
         \hline
         \multicolumn{9}{|c|}{Compartmental Data} \\ \hline
         \multicolumn{3}{|c}{Patient 563} & \multicolumn{3}{|c}{Patient 570} & \multicolumn{3}{|c|}{Patient 588} \\ \hline 
         15 min & 30 min & 60 min &15 min & 30 min & 60 min &15 min & 30 min & 60 min \\ \hline
-        10.76 &16.92 &25.72 &9.49 &18.60 &25.85 &10.24&16.31 &24.03 \\ \hline
+        $10.76$ &$16.92$ &$25.72$ &$9.49$ &$18.60$ &$25.85$ &$10.24$&$16.31$ &$24.03$ \\ \hline
       \end{tabular}
     \end{table}
 
     Unfortunately, the use of a more complex, bidirectional LSTM hasn't resulted in much of an improvement to performance at all. It performs very similarly to the ordinary LSTM both when using and when not using the compartmental data. This could be because of the fact that future BG levels are much more dependent on previous BG levels then previous are dependent on future. This fact means that the 'extra direction' of information that the bidirectional LSTM provides isn't actually very informative, and doesn't provide any noticeable improvement to model performance.
 	
+    \subsubsection{Clinical Suitability}
+    To properly evaluate the performance of a model in this context, it is important to look at the model in a clinical light. To do so, we make use of the CEG \cite{CEGA} to view the percentage of predictions which are clinically acceptable, that is to say the percentage of predictions in Zone A of the grid. Three models are selected for clinical experimentation:
+    \begin{itemize}
+      \item Basic LSTM
+      \item LSTM with compartmental data
+      \item LSTM with normalised compartmental data without basal
+    \end{itemize}
+
+    The three models are tested at all of the 5 minute PH intervals between 5 minutes and 60 minutes inclusive, to see the degradation of RMSE performance, and the percentage of predictions that remain in Zone A of the CEG.
+
+    \begin{figure}[H]
+      \centering
+
+      \includegraphics[width=0.75\textwidth]{images/AccOverPH.png}
+      \caption{
+       A graph showing the increase in RMSE over PH for patient 588
+      }
+    \end{figure}
+
+    To analyse this figure, we refer back to the notion of an accurate prediction and a clinically acceptable prediction as defined in the literature review. These are prediction errors that are below 14 mg/dL and 24 mg/dL respectively. From this graph, a table is constructed to show the PHs at which the different models cross these different thresholds of accuracy.
+
+    \begin{table}[H]
+      \centering
+      \caption{A table showing the PHs at which different models cross the different accuracy thresholds}
+      \begin{tabular}{|*{6}{c|}} 
+        \hline
+        \multicolumn{2}{|c}{LSTM} & \multicolumn{2}{|c}{Compartmental LSTM} & \multicolumn{2}{|c|}{Normed no Basal LSTM} \\ \hline 
+        Accurate & Clinically Acceptable & Accurate & Clinically Acceptable & Accurate & Clinically Acceptable \\ \hline
+        15 mins&35 mins &20 mins &40 mins &20 mins & 50 mins \\ \hline
+      \end{tabular}
+    \end{table}
+
+    The best performing model, 'NormalisedNoBasal', is capable of making clinically acceptable predictions up to 50 minutes into the future - a time period which would provide real assistance to any actual patients using this machine learning model. 
+
+    \begin{figure}[H]
+      \centering
+
+      \includegraphics[width=0.75\textwidth]{images/ClarkeOverPH.png}
+      \caption{
+       A graph showing the decrease in predictions within Zone A of the CEG over PH for patient 588
+      }
+    \end{figure}
+
+    What is particularly interesting in this graph is the fact that the number of points in zone A of the CEG is practically identical between the LSTM with normalised data and no basal, and the LSTM using all of the original compartmental data. This contrasts the fact that in the previous graph, the accuracy was noticeably better with the previous of the two. This contrast is due to the fact that the normalised model is far more consistent in its predictions, so doesn't have any predictions within zones C, D and E of the CEG, which represent potentially dangerous predictions. On the other hand, the compartmental LSTM model makes many more potentially dangerous predictions, which increases the RMSE much more.
+
+    Taking only the best performing model, the LSTM with normalised data and no basal, the CEG zones are calculated at the PH of clinical acceptability - 50 mins. We calculate these percentages by once again using the data of patient 588. $82.7\%$ are in Zone A, $16.8\%$ are in Zone B, and $0.5\%$ are in Zone D of the grid. Regions A and B represent points that would not lead to any inappropriate treatment, signifying that in $99.5\%$ at this 50 minute PH, the model wouldn't lead to any issues for the patient. However, in practice, such a model would be making thousands of predictions for a patient on a given day; this $0.5\%$ error would almost certainly lead to the model missing a hypergylcemic or hypoglycemic episode, which is unacceptable.
+
 	\subsection{Summary}
       
       Across all of the patients, any models that were trained on both the CGM data and the compartmental data performed noticeably better. This performance was enhanced significantly further when min-max scaling normalisation \cite{minmax} was applied across the input data before training. The best performing model was the simple LSTM trained on all of the normalised compartmental data apart from the basal data, with an average RMSE at 30 mins of $16.65$mg/dL across the three patients. This best model significantly outperforms the baseline, whose average across the three patients was $20.77$mg/dL. Patient 563 was consistently the worst performing patient across the models, with patients 570 and 588 alternating between having better performance depending on the model in question. Patient 588 saw by far the most performance increase when adding compartmental data and removing the basal data, which may have something to do with the fact that they are the only female patient, but is more likely to do with the quality of data recorded. Graphs for the performance of all of the models can be seen on the following page.
@@ -799,48 +846,29 @@
           \hline
           Author & Model Type & Accuracy (RMSE) & PH \\ [0.5ex] 
           \hline\hline
-          Pérez-Gandía et al. \cite{paper3} & ANN on CGM data & 18.00 & 30 min \\ 
+          Pérez-Gandía et al. \cite{paper3} & ANN on CGM data & $18.00$ & 30 min \\ 
           \hline
-          Alfian et al. \cite{paper5} & ANN with time-domain attributes & 6.31 & 30 min \\
+          Alfian et al. \cite{paper5} & ANN with time-domain attributes & $6.31$ & 30 min \\
           \hline
-          Munoz-Organero et al. \cite{paper6} & RNN on AIDA data & 2.70 & 15 min \\
+          Munoz-Organero et al. \cite{paper6} & RNN on AIDA data & $2.70$ & 15 min \\
           \hline
-          Robertson et al. \cite{paper1} & RNN with Deep CMs & 6.42 & 30 min \\
+          Robertson et al. \cite{paper1} & RNN with Deep CMs & $6.42$ & 30 min \\
           \hline
-          Wang et al. \cite{paper8} & VMD with IPSO & 3.03 & 30 min \\
+          Wang et al. \cite{paper8} & VMD with IPSO & $3.03$ & 30 min \\
           \hline
-          Aliberti et al. \cite{paper9} & LSTM multiple patients & 7.18 & 30 min \\
+          Aliberti et al. \cite{paper9} & LSTM multiple patients & $7.18$ & 30 min \\
           \hline
-          Zhu et al. \cite{paper7} & CNN on CGM data & 21.72 & 30 min \\
+          Zhu et al. \cite{paper7} & CNN on CGM data & $21.72$ & 30 min \\
           \hline
-          Wang et al. \cite{paper10} & LightGBM & 13.90 & 30 min \\
+          Wang et al. \cite{paper10} & LightGBM & $13.90$ & 30 min \\
           \hline
-          Our model & LSTM with CMs & 16.65 & 30 min \\ [1ex]
+          Our model & LSTM with CMs & $16.65$ & 30 min \\ [1ex]
           \hline 
           \end{tabular}
         \end{center}
       \end{table}
 
-      Our model is outperformed by most of the approaches seen in literature, however it is very hard to compare performance between them as completely different datasets are used. The simplicity of the dataset being predicted over plays a large factor in the prediction accuracy of the models. The model trained by Zhu et al. \cite{paper7} was also trained on the OhioT1DM dataset, so can be directly compared, and our model makes significantly more accurate predictions.
-
-      \subsubsection{Clinical Suitability}
-        To properly evaluate the performance of a model in this context, it is important to look at the model in a clinical light. To do so, we make use of the CEG \cite{CEGA} to view the percentage of predictions which are clinically acceptable, that is to say the percentage of predictions in Zone A of the grid. Three models are selected for clinical experimentation:
-        \begin{itemize}
-          \item Basic LSTM
-          \item LSTM with compartmental data
-          \item LSTM with normalised compartmental data without basal
-        \end{itemize}
-
-        The three models are tested at all of the 5 minute PH intervals between 5 minutes and 60 minutes inclusive, to see the degradation of RMSE performance, and the percentage of predictions that remain in Zone A of the CEG.
-
-        \begin{figure}[H]
-          \centering
-    
-          \includegraphics[width=0.75\textwidth]{images/AccOverPH.png}
-          \caption{
-           A 
-          }
-        \end{figure}
+      Our model is outperformed by most of the approaches seen in literature, however it is very hard to compare performance between them as completely different datasets are used. The simplicity of the dataset being predicted over plays a large factor in the prediction accuracy of the models. The model trained by Zhu et al. \cite{paper7} was also trained on the OhioT1DM dataset, so can be directly compared, and our model makes significantly more accurate predictions. However, that being said, our model is far from perfect and could be improved by implementing features from some of the approaches seen in literature.
 
 % Add more sections if necessary
 
@@ -849,9 +877,30 @@
 \section{Conclusions and Future Work} % edit section heading as appropriate
     \subsection{Conclusions}
         Talk generally about the parallels and differences seen from my approach vs the approaches studied in the literature review. Explain limitations of the task in reality.
+
+        Blood glucose forecasting will continue to be a challenging problem for machine learning researchers, but one that provides life changing capabilities for T1DM patients if solved. A short literature review was performed and some models were devloped with inspiration from those works seen in literature - parallels can be drawn between the two. It was clear both in literature and in the development of the project, that including more information about patients improves the performance of the model, but at what point does including more information start to hinder the performance of the model? Moreover, the more information you include about each patient, the more information you require from them which makes the construction of new models far more difficult as the volume of data you need begins to increase. Some approaches in literature claim incredibly accurate results, such as Wang et al. \cite{paper8} who claim a RMSE of $3.03$mg/dL over a 30 min PH, but such accuracies are meaningless unless they cross the largest hurdle in BG forecasting and are tested in vitro.
+
+        In vitro testing is a huge limitation for BG prediction for a number of reasons. Firstly, find enough volunteers who are willing to follow the study over a long period of time, and gaining ethical approval are challenges in themselves and required to even begin an in vitro test. Once the actual testing begins, the models themselves struggle. In all of the approaches we have seen in literature, and in the approaches seen in this project, the models are trained to a very specific period of a patient's life and tested on that same very specific period. Now imagine an in vitro test, where at some points a patient could for example fall ill, or feel incredibly stressed, or change their diet. These things would greatly change the dynamics of their blood glucose and render a normally very accurate model inaccurate. In order to properly accomodate for an in vitro test, a model would need a way to quickly adapt to differences in the wellbeing of the patient, either through having multiple saved presets (which would require huge amounts of data per patient), or through real-time learning where the network's weights would update as it was being used.
+
+        Due to all of these issues, it unfortunately seems that an accurate and safe blood glucose forecasting model for the general public still feels far into the future. Despite this, current work on the topic is very promising and with a push to perform more in vitro testing to build confidence in prediction methods, it is hopeful that a new age of diabetes technology will be brought about, where it is even easier and safer for T1DM patients to manage their condition alongisde an intelligent agent.
 	
 	\subsection{Future work}
         Go into detail about how the model could be improved / what it would take to put such a model out into the real world via CGM/Pump.
+        
+        With reference to the objectives and aims of this project, all of the tasks set out to be completed were completed. However, that is not to say that there are not improvements that could be made to the final model, as it definitely could have made more accurate predictions on the data.
+
+        \subsubsection{Model Improvements}
+          The first improvement that could be made to the model would be to try and use a more complex model, to try and better represent the connections between input data and prediction points. One example of such a model is transformer models \cite{transformer} which use an attention mechanism to model the connections between input datapoints, rather than in RNNs where sequential datapoints are automatically assumed to be connected. It was unclear in the work as to whether the filtering applied to the data actually resulted in an improvement in the performance of the models. In future work, different kinds of filtering could be implemented such as Kalman filtering \cite{kalman}, to see if this technique would augment model performance. Kalman filtering is commonly used in time series prediction, so it is hopeful that this would be the case.
+
+          The Haiya et al. \cite{haiya} model that was used to model carbohydrate and insulin dynamics were both very simple differential equations, that didn't consider many facts about the patient in question or the types of food eaten. The carbohydrate curve could easily be improved in future work by changing the steepness of the curve depending on the type of food eaten. For example, if something such as sugar were eaten, the curve would remain steep, as sugar is quickly absorbed into the body. In contrast, if a patient were to eat pasta, the curve would be flattened to represent the fact that the energy is absorbed over a much longer period of time. The insulin curves could likewise be augmented by factoring in things such as the weight of the patient, and the specific type of insulin that they were dosing themselves with, to ensure that all data passed into the model was as accurate as possible.
+
+          The compartmental data used in this project did not include all of the most influential factors on BG levels, with the most influential omission being exercise done by the patient. To improve the model even further, it would be prudent to include another curve to model the impacts of exercise in lowering BG levels, so that the model could more accurately and quickly predict drops in BG data due to exercise done by the patient.
+
+        \subsubsection{Real life usage}
+
+         Of course, the most significant and important piece of future work to be done would be to release this model in such a way that it would be useable by a general T1DM patient. To be able to use a model, a patient would need to have a CGM, an insulin pump and a phone. A phone app would need to be developed that contained a downloaded version of the model, and an API with which the CGM device could connect and send readings to. Using the readings coming from the CGM, the AI contained within the phone app would be able to make predictions on the patient's BG data. To ensure that this model performed well, it would be important to implement some kind of real-time learning \cite{rtrl}, so that network weights could update on the fly, and the network would remain accurate for the patient using it.
+
+         With the predictions in the app, a number of things could be done such as something as simple as just displaying the expected blood glucose levels over different horizons, to give the user information as to how their BG level is likely to change. This could be combined with an alarm system so that if the application believes that the user will enter a hyperglycemic/hypoglycemic state, the application would play an alarm to alert them. In the future, when such models are more trusted and better developed, such an AI would also be able to offer recommendations on insulin dosage, or automatically give insulin dosages through the app, which would send a communication to the insulin pump to dose that amount of insulin.
     
 
 
@@ -875,5 +924,3 @@
 
 %%%%%%%%%%%%%%%%%% END MATTER %%%%%%%%%%%%%%%%%%
 \end{document}
-
-%A table showing the RMSE performance of the residual LSTM model

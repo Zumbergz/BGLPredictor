@@ -1855,6 +1855,119 @@
       \verb https://jmlr.org/papers/volume18/16-558/16-558.pdf
       \endverb
     \endentry
+    \entry{transformer}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=19f0a533d759c0597b7d5176ac41100d}{%
+           family={Sergazinov},
+           familyi={S\bibinitperiod},
+           given={Renat},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8515d4f5c7ec290b392444411896d8a7}{%
+           family={Armandpour},
+           familyi={A\bibinitperiod},
+           given={Mohammadreza},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e9de91dad218175c20b080766467eca9}{%
+           family={Gaynanova},
+           familyi={G\bibinitperiod},
+           given={Irina},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{ced527e1559c737da69defc7e9071845}
+      \strng{fullhash}{ced527e1559c737da69defc7e9071845}
+      \strng{bibnamehash}{ced527e1559c737da69defc7e9071845}
+      \strng{authorbibnamehash}{ced527e1559c737da69defc7e9071845}
+      \strng{authornamehash}{ced527e1559c737da69defc7e9071845}
+      \strng{authorfullhash}{ced527e1559c737da69defc7e9071845}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv.org}
+      \field{title}{Gluformer: Transformer-Based Personalized Glucose Forecasting with Uncertainty Quantification}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2209.04526
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2209.04526
+      \endverb
+    \endentry
+    \entry{kalman}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=60e6cab62698a3994a8e22d2593a1bb1}{%
+           family={Montella},
+           familyi={M\bibinitperiod},
+           given={Corey},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {unknown}%
+      }
+      \strng{namehash}{60e6cab62698a3994a8e22d2593a1bb1}
+      \strng{fullhash}{60e6cab62698a3994a8e22d2593a1bb1}
+      \strng{bibnamehash}{60e6cab62698a3994a8e22d2593a1bb1}
+      \strng{authorbibnamehash}{60e6cab62698a3994a8e22d2593a1bb1}
+      \strng{authornamehash}{60e6cab62698a3994a8e22d2593a1bb1}
+      \strng{authorfullhash}{60e6cab62698a3994a8e22d2593a1bb1}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{month}{5}
+      \field{title}{The Kalman Filter and Related Algorithms: A Literature Review}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/236897001_The_Kalman_Filter_and_Related_Algorithms_A_Literature_Review
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/236897001_The_Kalman_Filter_and_Related_Algorithms_A_Literature_Review
+      \endverb
+    \endentry
+    \entry{rtrl}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3e61709274508b1e36f637c008c31fa7}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Guang-Bin},
+           giveni={G\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=03f2e5c29a4c260c736612d10b1c8857}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Qin-Yu},
+           giveni={Q\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=52c20b79875574525316abc014fda5dc}{%
+           family={Siew},
+           familyi={S\bibinitperiod},
+           given={Chee\bibnamedelima Kheong},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers}%
+      }
+      \strng{namehash}{2858bcadafbf695cee71e8e75010e5e4}
+      \strng{fullhash}{2858bcadafbf695cee71e8e75010e5e4}
+      \strng{bibnamehash}{2858bcadafbf695cee71e8e75010e5e4}
+      \strng{authorbibnamehash}{2858bcadafbf695cee71e8e75010e5e4}
+      \strng{authornamehash}{2858bcadafbf695cee71e8e75010e5e4}
+      \strng{authorfullhash}{2858bcadafbf695cee71e8e75010e5e4}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ResearchGate}
+      \field{month}{8}
+      \field{title}{Real-Time Learning Capability of Neural Networks}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/6928612_Real-Time_Learning_Capability_of_Neural_Networks
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/6928612_Real-Time_Learning_Capability_of_Neural_Networks
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
